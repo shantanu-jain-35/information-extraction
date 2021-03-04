@@ -1,3 +1,6 @@
+# NOTE FOR SHANTANU
+Actual pretrained spanBEERT file is too large to upload. Will need to extract the pre-trained spanBERT file from Giannis' repo: "/pretrained_spanbert/pytorch_model.bin" and insert into "/pretrained_spanbert" directory.
+
 # SpanBERT for Relation Extraction from Web Documents
 This repository is a fork from [SpanBERT](https://github.com/facebookresearch/SpanBERT) by Facebook Research, which contains code and models for the paper: [SpanBERT: Improving Pre-training by Representing and Predicting Spans](https://arxiv.org/abs/1907.10529).
 
