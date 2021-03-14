@@ -1,0 +1,580 @@
+Loading pre-trained spanBERT from ./pretrained_spanbert
+Parameters:
+Client Key      =        AIzaSyDNWorCRZlzJLmXMCjlFCmuYi9YMYN7XTA
+Engine Key      =        85b4a45bc6204a22a
+Relation        =        per:employee_of
+Threshold       =        0.7
+Query           =        sundar pichai google
+# of Tuples     =        10
+========== Iteration: 1 - Query: sundar pichai google ==========
+URL (1/10): https://en.wikipedia.org/wiki/Sundar_Pichai
+        Fetching text from url...
+        Webpage Length (num characters): 20000
+        Annotating the webpage using spacy...
+        Extracted 257 sentences...
+        Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+
+                === Extracted Relation ===
+                Sentence: Sundar Pichai - Wikipedia Sundar Pichai From Wikipedia, the free encyclopedia Jump to navigation Jump to search Indian-American engineer and business executive Sundar Pichai Pichai in 2020 Born Pichai Sundararajan ( 1972-07-12 ) July 12, 1972 (age 48) Chennai , Tamil Nadu , India Citizenship United States [] Education IIT Kharagpur ( BTech ) Stanford University ( MS ) University of Pennsylvania ( MBA ) Title CEO of Alphabet and Google Board member of Alphabet Inc. [] Magic Leap [] Spouse(s) Anjali Pichai Children 2 Pichai Sundararajan (born July 12, 1972 [] ), known as Sundar Pichai ( / ˈ s ʊ n d ɑːr p ɪ ˈ tʃ aɪ / ), is an Indian-American business executive. []
+                Confidence: 0.9654775857925415 ; Subject: Spouse(s ; Object: Alphabet and ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: Sundar Pichai - Wikipedia Sundar Pichai From Wikipedia, the free encyclopedia Jump to navigation Jump to search Indian-American engineer and business executive Sundar Pichai Pichai in 2020 Born Pichai Sundararajan ( 1972-07-12 ) July 12, 1972 (age 48) Chennai , Tamil Nadu , India Citizenship United States [] Education IIT Kharagpur ( BTech ) Stanford University ( MS ) University of Pennsylvania ( MBA ) Title CEO of Alphabet and Google Board member of Alphabet Inc. [] Magic Leap [] Spouse(s) Anjali Pichai Children 2 Pichai Sundararajan (born July 12, 1972 [] ), known as Sundar Pichai ( / ˈ s ʊ n d ɑːr p ɪ ˈ tʃ aɪ / ), is an Indian-American business executive. []
+                Confidence: 0.9249996542930603 ; Subject: Anjali Pichai Children ; Object: Alphabet and ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: Sundar Pichai - Wikipedia Sundar Pichai From Wikipedia, the free encyclopedia Jump to navigation Jump to search Indian-American engineer and business executive Sundar Pichai Pichai in 2020 Born Pichai Sundararajan ( 1972-07-12 ) July 12, 1972 (age 48) Chennai , Tamil Nadu , India Citizenship United States [] Education IIT Kharagpur ( BTech ) Stanford University ( MS ) University of Pennsylvania ( MBA ) Title CEO of Alphabet and Google Board member of Alphabet Inc. [] Magic Leap [] Spouse(s) Anjali Pichai Children 2 Pichai Sundararajan (born July 12, 1972 [] ), known as Sundar Pichai ( / ˈ s ʊ n d ɑːr p ɪ ˈ tʃ aɪ / ), is an Indian-American business executive. []
+                Confidence: 0.688370943069458 ; Subject: Pichai Sundararajan ; Object: Alphabet and ;
+Confidence is lower than threshold confidence. Ignoring this.
+                ==========================
+
+        Processed 5 / 257  sentences...
+        Processed 10 / 257  sentences...
+
+                === Extracted Relation ===
+                Sentence: In 2013, Pichai added Android to the list of Google products that he oversaw.
+                Confidence: 0.7732059955596924 ; Subject: Pichai ; Object: Google ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: Pichai was selected to become the next CEO of Google on August 10, 2015, after previously being appointed Product Chief by CEO, Larry Page .
+                Confidence: 0.9970765113830566 ; Subject: Pichai ; Object: Google ;
+                New tuple found with higher confidence. Replacing the older one.
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: Pichai was selected to become the next CEO of Google on August 10, 2015, after previously being appointed Product Chief by CEO, Larry Page .
+                Confidence: 0.997282862663269 ; Subject: Larry Page ; Object: Google ;
+                Adding to set of extracted relations
+                ==========================
+
+        Processed 15 / 257  sentences...
+
+                === Extracted Relation ===
+                Sentence: His mother, Lakshmi, was a stenographer , and his father, Regunatha Pichai, was an electrical engineer at GEC , the British conglomerate .
+                Confidence: 0.9442318677902222 ; Subject: Regunatha Pichai ; Object: GEC ;
+                Adding to set of extracted relations
+                ==========================
+
+        Processed 20 / 257  sentences...
+        Processed 25 / 257  sentences...
+
+                === Extracted Relation ===
+                Sentence: On March 13, 2013, Pichai added Android to the list of Google products that he oversaw.
+                Confidence: 0.7732059955596924 ; Subject: Pichai ; Object: Google ;
+                Duplicate with lower confidence than existing record. Ignoring this.
+                ==========================
+
+        Processed 30 / 257  sentences...
+
+                === Extracted Relation ===
+                Sentence: Pichai was selected to become the next CEO of Google on August 10, 2015 [] after previously being appointed Product Chief by CEO, Larry Page .
+                Confidence: 0.9971259236335754 ; Subject: Larry Page ; Object: Google ;
+                Duplicate with lower confidence than existing record. Ignoring this.
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: Pichai had been suggested as a contender for Microsoft 's CEO in 2014, a position that was eventually given to Satya Nadella . [] []
+                Confidence: 0.88902747631073 ; Subject: Pichai ; Object: Microsoft ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: Pichai had been suggested as a contender for Microsoft 's CEO in 2014, a position that was eventually given to Satya Nadella . [] []
+                Confidence: 0.8969603180885315 ; Subject: Satya Nadella ; Object: Microsoft ;
+                Adding to set of extracted relations
+                ==========================
+
+        Processed 35 / 257  sentences...
+
+                === Extracted Relation ===
+                Sentence: In December 2019, Pichai became the CEO of Alphabet Inc . [] []
+                Confidence: 0.9966135025024414 ; Subject: Pichai ; Object: Alphabet Inc ;
+                Adding to set of extracted relations
+                ==========================
+
+        Processed 40 / 257  sentences...
+        Processed 45 / 257  sentences...
+        Processed 50 / 257  sentences...
+        Processed 55 / 257  sentences...
+        Processed 60 / 257  sentences...
+        Processed 65 / 257  sentences...
+        Processed 70 / 257  sentences...
+
+                === Extracted Relation ===
+                Sentence: Google gets new parent Alphabet; Sundar Pichai becomes CEO of Google" .
+                Confidence: 0.9087848663330078 ; Subject: Sundar Pichai ; Object: Google ;
+                Adding to set of extracted relations
+                ==========================
+
+        Processed 75 / 257  sentences...
+        Processed 80 / 257  sentences...
+        Processed 85 / 257  sentences...
+        Processed 90 / 257  sentences...
+        Processed 95 / 257  sentences...
+        Processed 100 / 257  sentences...
+        Processed 105 / 257  sentences...
+        Processed 110 / 257  sentences...
+
+                === Extracted Relation ===
+                Sentence: Sundar Pichai: Google's new boss from humble roots" .
+                Confidence: 0.8172113299369812 ; Subject: Sundar Pichai ; Object: Google ;
+                Duplicate with lower confidence than existing record. Ignoring this.
+                ==========================
+
+        Processed 115 / 257  sentences...
+
+                === Extracted Relation ===
+                Sentence: Meet Google new Android chief Sundar Pichai" .
+                Confidence: 0.9952192306518555 ; Subject: Sundar Pichai ; Object: Android ;
+                Adding to set of extracted relations
+                ==========================
+
+        Processed 120 / 257  sentences...
+        Processed 125 / 257  sentences...
+        Processed 130 / 257  sentences...
+        Processed 135 / 257  sentences...
+        Processed 140 / 257  sentences...
+        Processed 145 / 257  sentences...
+        Processed 150 / 257  sentences...
+        Processed 155 / 257  sentences...
+        Processed 160 / 257  sentences...
+        Processed 165 / 257  sentences...
+        Processed 170 / 257  sentences...
+
+                === Extracted Relation ===
+                Sentence: ^ Samuel Gibbs, The most powerful Indian technologists in Silicon Valley Archived April 11, 2016, at the Wayback Machine theguardian.com April 11, 2014.
+                Confidence: 0.9778388738632202 ; Subject: Samuel Gibbs ; Object: the Wayback Machine ;
+                Adding to set of extracted relations
+                ==========================
+
+        Processed 175 / 257  sentences...
+        Processed 180 / 257  sentences...
+        Processed 185 / 257  sentences...
+        Processed 190 / 257  sentences...
+        Processed 195 / 257  sentences...
+        Processed 200 / 257  sentences...
+        Processed 205 / 257  sentences...
+        Processed 210 / 257  sentences...
+        Processed 215 / 257  sentences...
+        Processed 220 / 257  sentences...
+        Processed 225 / 257  sentences...
+        Processed 230 / 257  sentences...
+        Processed 235 / 257  sentences...
+        Processed 240 / 257  sentences...
+        Processed 245 / 257  sentences...
+        Processed 250 / 257  sentences...
+        Processed 255 / 257  sentences...
+
+                === Extracted Relation ===
+                Sentence: Sundar Pichai on Twitter "Sundar Pichai's rise to fame in 90 seconds" , Tech Gurus, The Daily Telegraph Business positions Preceded by Larry Page CEO of Google 2015–present Incumbent v t e Alphabet Inc. Subsidiaries Access Google Fiber Calico CapitalG DeepMind Fitbit Google Fitbit Tenor Waze YouTube GV Sidewalk Labs Verily X Waymo Wing Former Chronicle Security Jigsaw Loon Makani Nest Labs People Andrew Conrad Tony Fadell Arthur D. Levinson David Krane Ruth Porat Astro Teller Executives Current Sundar Pichai ( CEO ) Ruth Porat ( CFO ) Former Larry Page ( CEO ) Sergey Brin ( President ) David Drummond ( CLO ) Board of directors Current Sergey Brin John Doerr John L. Hennessy Ann Mather Alan Mulally Larry Page Sundar Pichai Ram Shriram Roger W. Ferguson Jr. Former Eric Schmidt Diane Greene Founders Larry Page Sergey Brin Category Companies portal Internet portal v t e Google Alphabet Inc. History Outline List of products List of Android apps List of easter eggs List of mergers and acquisitions Company Divisions and real estates Ads AI Android Chrome Cloud Glass Google.org Crisis Response Public Alerts RechargeIT Health Maps Nest Pixel Search Stadia Games and Entertainment YouTube Real estate 111 Eighth Avenue Barges Chelsea Market Data centers Googleplex YouTube Space People Current Krishna Bharat Vint Cerf Jeff Dean John Doerr Sanjay Ghemawat Al Gore John L. Hennessy Urs Hölzle Salar Kamangar Ray Kurzweil Ann Mather Alan Mulally Sundar Pichai (CEO) Ruth Porat (CFO) Rajen Sheth Hal Varian Susan Wojcicki Former Andy Bechtolsheim Sergey Brin (Founder) David Cheriton Matt Cutts David Drummond Alan Eustace Timnit Gebru Omid Kordestani Paul Otellini Larry Page (Founder) Patrick Pichette Eric Schmidt Ram Shriram Amit Singhal Shirley M. Tilghman Rachel Whetstone Design and Typography Fonts Croscore Google Sans Noto Product Sans Roboto Logo Doodle Favicon Material Design comparison of implementations Events and initiatives Android Developer Challenge Developer Day Developer Lab Code-in Code Jam Developer Day Developers Live Doodle4Google Initiatives/projects A Google A Day Area 120 Reply Tables ATAP Cultural Institute Data Liberation Front Data Transfer Project Digital Unlocked Dragonfly Get Your Business Online Google for Education Google for Startups Labs Liquid Galaxy Made with Code Nightingale RechargeIT Shield Sunroof Zero I/O Jigsaw Living Stories Lunar XPRIZE Science Fair Summer of Code Talks at Google YouTube Awards CNN/YouTube presidential debates Comedy Week Live Music Awards Space Lab Symphony Orchestra Criticism 2018 walkouts Alphabet Workers Union Censorship Dragonfly "Ideological Echo Chamber" memo Litigation Privacy concerns Street View San Francisco tech bus protests Worker organization Development Operating systems Android Automotive Glass OS Things TV Wear Chrome OS Chromium OS Fuchsia TV Libraries/frameworks AMP Angular Angular AngularJS ARCore APIs Chart API Charts Dialogflow Fast Pair Flutter Gears Guava Guice Mobile Services Pack Polymer Web Components Tango TensorFlow Web Accelerator Tools Android Cloud to Device Messaging Android Studio App Inventor App Maker AppSheet Closure Tools Gadgets GData GYP Kythe Lighthouse Native Client Octane Optimize OpenRefine PageSpeed reCAPTCHA Search Console Sitemaps Swiffy Web Toolkit Search algorithms Hummingbird PageRank Panda Penguin Pigeon RankBrain Others Chrome Experiments Developers Media file formats WebM VP8 VP9 AV1 WebP OpenSocial Platforms App Engine Apps Script Cloud Platform Connect Dataflow Datastore Messaging Stackdriver Firebase Cloud Messaging Gerrit Kubernetes Programming languages Dart Go Sawzall Web Server Services Entertainment Chromecast Currents Play Books Games Music Newsstand Pass Services Podcasts Public DNS Quick, Draw!
+                Confidence: 0.7612047791481018 ; Subject: Larry Page ; Object: Tech Gurus ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: Sundar Pichai on Twitter "Sundar Pichai's rise to fame in 90 seconds" , Tech Gurus, The Daily Telegraph Business positions Preceded by Larry Page CEO of Google 2015–present Incumbent v t e Alphabet Inc. Subsidiaries Access Google Fiber Calico CapitalG DeepMind Fitbit Google Fitbit Tenor Waze YouTube GV Sidewalk Labs Verily X Waymo Wing Former Chronicle Security Jigsaw Loon Makani Nest Labs People Andrew Conrad Tony Fadell Arthur D. Levinson David Krane Ruth Porat Astro Teller Executives Current Sundar Pichai ( CEO ) Ruth Porat ( CFO ) Former Larry Page ( CEO ) Sergey Brin ( President ) David Drummond ( CLO ) Board of directors Current Sergey Brin John Doerr John L. Hennessy Ann Mather Alan Mulally Larry Page Sundar Pichai Ram Shriram Roger W. Ferguson Jr. Former Eric Schmidt Diane Greene Founders Larry Page Sergey Brin Category Companies portal Internet portal v t e Google Alphabet Inc. History Outline List of products List of Android apps List of easter eggs List of mergers and acquisitions Company Divisions and real estates Ads AI Android Chrome Cloud Glass Google.org Crisis Response Public Alerts RechargeIT Health Maps Nest Pixel Search Stadia Games and Entertainment YouTube Real estate 111 Eighth Avenue Barges Chelsea Market Data centers Googleplex YouTube Space People Current Krishna Bharat Vint Cerf Jeff Dean John Doerr Sanjay Ghemawat Al Gore John L. Hennessy Urs Hölzle Salar Kamangar Ray Kurzweil Ann Mather Alan Mulally Sundar Pichai (CEO) Ruth Porat (CFO) Rajen Sheth Hal Varian Susan Wojcicki Former Andy Bechtolsheim Sergey Brin (Founder) David Cheriton Matt Cutts David Drummond Alan Eustace Timnit Gebru Omid Kordestani Paul Otellini Larry Page (Founder) Patrick Pichette Eric Schmidt Ram Shriram Amit Singhal Shirley M. Tilghman Rachel Whetstone Design and Typography Fonts Croscore Google Sans Noto Product Sans Roboto Logo Doodle Favicon Material Design comparison of implementations Events and initiatives Android Developer Challenge Developer Day Developer Lab Code-in Code Jam Developer Day Developers Live Doodle4Google Initiatives/projects A Google A Day Area 120 Reply Tables ATAP Cultural Institute Data Liberation Front Data Transfer Project Digital Unlocked Dragonfly Get Your Business Online Google for Education Google for Startups Labs Liquid Galaxy Made with Code Nightingale RechargeIT Shield Sunroof Zero I/O Jigsaw Living Stories Lunar XPRIZE Science Fair Summer of Code Talks at Google YouTube Awards CNN/YouTube presidential debates Comedy Week Live Music Awards Space Lab Symphony Orchestra Criticism 2018 walkouts Alphabet Workers Union Censorship Dragonfly "Ideological Echo Chamber" memo Litigation Privacy concerns Street View San Francisco tech bus protests Worker organization Development Operating systems Android Automotive Glass OS Things TV Wear Chrome OS Chromium OS Fuchsia TV Libraries/frameworks AMP Angular Angular AngularJS ARCore APIs Chart API Charts Dialogflow Fast Pair Flutter Gears Guava Guice Mobile Services Pack Polymer Web Components Tango TensorFlow Web Accelerator Tools Android Cloud to Device Messaging Android Studio App Inventor App Maker AppSheet Closure Tools Gadgets GData GYP Kythe Lighthouse Native Client Octane Optimize OpenRefine PageSpeed reCAPTCHA Search Console Sitemaps Swiffy Web Toolkit Search algorithms Hummingbird PageRank Panda Penguin Pigeon RankBrain Others Chrome Experiments Developers Media file formats WebM VP8 VP9 AV1 WebP OpenSocial Platforms App Engine Apps Script Cloud Platform Connect Dataflow Datastore Messaging Stackdriver Firebase Cloud Messaging Gerrit Kubernetes Programming languages Dart Go Sawzall Web Server Services Entertainment Chromecast Currents Play Books Games Music Newsstand Pass Services Podcasts Public DNS Quick, Draw!
+                Confidence: 0.8960266709327698 ; Subject: Sergey Brin ; Object: CFO ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: Sundar Pichai on Twitter "Sundar Pichai's rise to fame in 90 seconds" , Tech Gurus, The Daily Telegraph Business positions Preceded by Larry Page CEO of Google 2015–present Incumbent v t e Alphabet Inc. Subsidiaries Access Google Fiber Calico CapitalG DeepMind Fitbit Google Fitbit Tenor Waze YouTube GV Sidewalk Labs Verily X Waymo Wing Former Chronicle Security Jigsaw Loon Makani Nest Labs People Andrew Conrad Tony Fadell Arthur D. Levinson David Krane Ruth Porat Astro Teller Executives Current Sundar Pichai ( CEO ) Ruth Porat ( CFO ) Former Larry Page ( CEO ) Sergey Brin ( President ) David Drummond ( CLO ) Board of directors Current Sergey Brin John Doerr John L. Hennessy Ann Mather Alan Mulally Larry Page Sundar Pichai Ram Shriram Roger W. Ferguson Jr. Former Eric Schmidt Diane Greene Founders Larry Page Sergey Brin Category Companies portal Internet portal v t e Google Alphabet Inc. History Outline List of products List of Android apps List of easter eggs List of mergers and acquisitions Company Divisions and real estates Ads AI Android Chrome Cloud Glass Google.org Crisis Response Public Alerts RechargeIT Health Maps Nest Pixel Search Stadia Games and Entertainment YouTube Real estate 111 Eighth Avenue Barges Chelsea Market Data centers Googleplex YouTube Space People Current Krishna Bharat Vint Cerf Jeff Dean John Doerr Sanjay Ghemawat Al Gore John L. Hennessy Urs Hölzle Salar Kamangar Ray Kurzweil Ann Mather Alan Mulally Sundar Pichai (CEO) Ruth Porat (CFO) Rajen Sheth Hal Varian Susan Wojcicki Former Andy Bechtolsheim Sergey Brin (Founder) David Cheriton Matt Cutts David Drummond Alan Eustace Timnit Gebru Omid Kordestani Paul Otellini Larry Page (Founder) Patrick Pichette Eric Schmidt Ram Shriram Amit Singhal Shirley M. Tilghman Rachel Whetstone Design and Typography Fonts Croscore Google Sans Noto Product Sans Roboto Logo Doodle Favicon Material Design comparison of implementations Events and initiatives Android Developer Challenge Developer Day Developer Lab Code-in Code Jam Developer Day Developers Live Doodle4Google Initiatives/projects A Google A Day Area 120 Reply Tables ATAP Cultural Institute Data Liberation Front Data Transfer Project Digital Unlocked Dragonfly Get Your Business Online Google for Education Google for Startups Labs Liquid Galaxy Made with Code Nightingale RechargeIT Shield Sunroof Zero I/O Jigsaw Living Stories Lunar XPRIZE Science Fair Summer of Code Talks at Google YouTube Awards CNN/YouTube presidential debates Comedy Week Live Music Awards Space Lab Symphony Orchestra Criticism 2018 walkouts Alphabet Workers Union Censorship Dragonfly "Ideological Echo Chamber" memo Litigation Privacy concerns Street View San Francisco tech bus protests Worker organization Development Operating systems Android Automotive Glass OS Things TV Wear Chrome OS Chromium OS Fuchsia TV Libraries/frameworks AMP Angular Angular AngularJS ARCore APIs Chart API Charts Dialogflow Fast Pair Flutter Gears Guava Guice Mobile Services Pack Polymer Web Components Tango TensorFlow Web Accelerator Tools Android Cloud to Device Messaging Android Studio App Inventor App Maker AppSheet Closure Tools Gadgets GData GYP Kythe Lighthouse Native Client Octane Optimize OpenRefine PageSpeed reCAPTCHA Search Console Sitemaps Swiffy Web Toolkit Search algorithms Hummingbird PageRank Panda Penguin Pigeon RankBrain Others Chrome Experiments Developers Media file formats WebM VP8 VP9 AV1 WebP OpenSocial Platforms App Engine Apps Script Cloud Platform Connect Dataflow Datastore Messaging Stackdriver Firebase Cloud Messaging Gerrit Kubernetes Programming languages Dart Go Sawzall Web Server Services Entertainment Chromecast Currents Play Books Games Music Newsstand Pass Services Podcasts Public DNS Quick, Draw!
+                Confidence: 0.927084743976593 ; Subject: David Drummond ; Object: CFO ;
+                Adding to set of extracted relations
+                ==========================
+
+URL (2/10): https://twitter.com/sundarpichai?lang=en
+        Fetching text from url...
+        Webpage Length (num characters): 66
+        Annotating the webpage using spacy...
+        Extracted 1 sentences...
+        Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+URL (3/10): https://blog.google/inside-google/company-announcements/commitments-racial-equity/
+        Fetching text from url...
+        Webpage Length (num characters): 13801
+        Annotating the webpage using spacy...
+        Extracted 72 sentences...
+        Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+
+                === Extracted Relation ===
+                Sentence: Our commitments to racial equity - The Keyword The Keyword Latest stories Product updates Product updates Android, Chrome & Play Android Chrome Chromebooks Google Play Wear OS by Google Devices & Services Chromecast Google Nest Pixel Pixelbook Stadia Explore & Get Answers Earth Google Assistant Maps News Search Travel Connect & Communicate Duo Photos Translate In The Cloud Docs, Sheets and Slides Gmail Google Cloud Meet More on the Cloud Blog See all product updates Company news Company news Outreach & initiatives Diversity and inclusion Education Google.org Grow with Google Sustainability See all Technology AI Developers Families Next billion users Safety and security See all Inside Google Data centers and infrastructure Doodles Googlers Life at Google See all Around the globe Google in Africa Google in Asia Google in Europe Google in Latin America See all Perspectives Sundar Pichai, CEO Ruth Porat, SVP and CFO Kent Walker, SVP See all Press corner RSS feed Subscribe A message from our CEO Our commitments to racial equity Copy link Sundar Pichai CEO of Google and Alphabet Published Jun 17, 2020 Copy link Editor’s Note: CEO Sundar Pichai sent the following note to the company today.
+                Confidence: 0.8444584608078003 ; Subject: Ruth Porat ; Object: SVP ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: Our commitments to racial equity - The Keyword The Keyword Latest stories Product updates Product updates Android, Chrome & Play Android Chrome Chromebooks Google Play Wear OS by Google Devices & Services Chromecast Google Nest Pixel Pixelbook Stadia Explore & Get Answers Earth Google Assistant Maps News Search Travel Connect & Communicate Duo Photos Translate In The Cloud Docs, Sheets and Slides Gmail Google Cloud Meet More on the Cloud Blog See all product updates Company news Company news Outreach & initiatives Diversity and inclusion Education Google.org Grow with Google Sustainability See all Technology AI Developers Families Next billion users Safety and security See all Inside Google Data centers and infrastructure Doodles Googlers Life at Google See all Around the globe Google in Africa Google in Asia Google in Europe Google in Latin America See all Perspectives Sundar Pichai, CEO Ruth Porat, SVP and CFO Kent Walker, SVP See all Press corner RSS feed Subscribe A message from our CEO Our commitments to racial equity Copy link Sundar Pichai CEO of Google and Alphabet Published Jun 17, 2020 Copy link Editor’s Note: CEO Sundar Pichai sent the following note to the company today.
+                Confidence: 0.8768166899681091 ; Subject: Sundar Pichai ; Object: SVP ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: Our commitments to racial equity - The Keyword The Keyword Latest stories Product updates Product updates Android, Chrome & Play Android Chrome Chromebooks Google Play Wear OS by Google Devices & Services Chromecast Google Nest Pixel Pixelbook Stadia Explore & Get Answers Earth Google Assistant Maps News Search Travel Connect & Communicate Duo Photos Translate In The Cloud Docs, Sheets and Slides Gmail Google Cloud Meet More on the Cloud Blog See all product updates Company news Company news Outreach & initiatives Diversity and inclusion Education Google.org Grow with Google Sustainability See all Technology AI Developers Families Next billion users Safety and security See all Inside Google Data centers and infrastructure Doodles Googlers Life at Google See all Around the globe Google in Africa Google in Asia Google in Europe Google in Latin America See all Perspectives Sundar Pichai, CEO Ruth Porat, SVP and CFO Kent Walker, SVP See all Press corner RSS feed Subscribe A message from our CEO Our commitments to racial equity Copy link Sundar Pichai CEO of Google and Alphabet Published Jun 17, 2020 Copy link Editor’s Note: CEO Sundar Pichai sent the following note to the company today.
+                Confidence: 0.9745934009552002 ; Subject: Sundar Pichai ; Object: 2020 Copy ;
+                Adding to set of extracted relations
+                ==========================
+
+        Processed 5 / 72  sentences...
+        Processed 10 / 72  sentences...
+        Processed 15 / 72  sentences...
+        Processed 20 / 72  sentences...
+        Processed 25 / 72  sentences...
+        Processed 30 / 72  sentences...
+        Processed 35 / 72  sentences...
+        Processed 40 / 72  sentences...
+        Processed 45 / 72  sentences...
+        Processed 50 / 72  sentences...
+        Processed 55 / 72  sentences...
+        Processed 60 / 72  sentences...
+
+                === Extracted Relation ===
+                Sentence: That includes our Chief Diversity Officer Melonie Parker and the Employee Engagement team, our Equity Project Management Office working in partnership with our Black Leadership Advisory Group and members of our Black Googler Network, and everyone who has stepped up with ideas on how we can build a better workplace, and, in turn, better products for the world.
+                Confidence: 0.9706864356994629 ; Subject: Melonie Parker ; Object: Equity Project Management Office ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: That includes our Chief Diversity Officer Melonie Parker and the Employee Engagement team, our Equity Project Management Office working in partnership with our Black Leadership Advisory Group and members of our Black Googler Network, and everyone who has stepped up with ideas on how we can build a better workplace, and, in turn, better products for the world.
+                Confidence: 0.890334963798523 ; Subject: Melonie Parker ; Object: Black Leadership Advisory Group ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: That includes our Chief Diversity Officer Melonie Parker and the Employee Engagement team, our Equity Project Management Office working in partnership with our Black Leadership Advisory Group and members of our Black Googler Network, and everyone who has stepped up with ideas on how we can build a better workplace, and, in turn, better products for the world.
+                Confidence: 0.9671834111213684 ; Subject: Melonie Parker ; Object: Black Googler Network ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: -Sundar POSTED IN: A message from our CEO Company announcements Diversity and Inclusion Google.org Related stories Google.org Reimagining 311 for the City of San José Mar 11, 2021 Grow with Google Job-training solutions in Europe, the Middle East and Africa Mar 11, 2021 Entrepreneurs Eight women kicking butt and taking (domain) names Mar 08, 2021 Diversity and Inclusion On International Women's Day, we're supporting new "firsts" Mar 08, 2021 Google.org Google.org’s call for a better future for women and girls Mar 08, 2021 Googlers A strong network of women changed the course of my career Mar 03, 2021 .
+                Confidence: 0.7847129106521606 ; Subject: -Sundar ; Object: Diversity and Inclusion Google.org Related ;
+                Adding to set of extracted relations
+                ==========================
+
+        Processed 65 / 72  sentences...
+        Processed 70 / 72  sentences...
+URL (4/10): https://www.youtube.com/watch?v=o6zfp6lRw2E
+        Fetching text from url...
+        Webpage Length (num characters): 248
+        Annotating the webpage using spacy...
+        Extracted 3 sentences...
+        Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+URL (5/10): https://blog.google/perspectives/sundar-pichai/
+        Fetching text from url...
+        Webpage Length (num characters): 1803
+        Annotating the webpage using spacy...
+        Extracted 12 sentences...
+        Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+
+                === Extracted Relation ===
+                Sentence: Sundar Pichai | Google Blog The Keyword Latest stories Product updates Product updates Android, Chrome & Play Android Chrome Chromebooks Google Play Wear OS by Google Devices & Services Chromecast Google Nest Pixel Pixelbook Stadia Explore & Get Answers Earth Google Assistant Maps News Search Travel Connect & Communicate Duo Photos Translate In The Cloud Docs, Sheets and Slides Gmail Google Cloud Meet More on the Cloud Blog See all product updates Company news Company news Outreach & initiatives Diversity and inclusion Education Google.org Grow with Google Sustainability See all Technology AI Developers Families Next billion users Safety and security See all Inside Google Data centers and infrastructure Doodles Googlers Life at Google See all Around the globe Google in Africa Google in Asia Google in Europe Google in Latin America See all Perspectives Sundar Pichai, CEO Ruth Porat, SVP and CFO Kent Walker, SVP See all Press corner RSS feed Subscribe Sundar Pichai CEO of Google and Alphabet Sundar is the CEO of Google and Alphabet and serves on Alphabet’s Board of Directors.
+                Confidence: 0.8444584608078003 ; Subject: Ruth Porat ; Object: SVP ;
+                New tuple found with higher confidence. Replacing the older one.
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: Sundar Pichai | Google Blog The Keyword Latest stories Product updates Product updates Android, Chrome & Play Android Chrome Chromebooks Google Play Wear OS by Google Devices & Services Chromecast Google Nest Pixel Pixelbook Stadia Explore & Get Answers Earth Google Assistant Maps News Search Travel Connect & Communicate Duo Photos Translate In The Cloud Docs, Sheets and Slides Gmail Google Cloud Meet More on the Cloud Blog See all product updates Company news Company news Outreach & initiatives Diversity and inclusion Education Google.org Grow with Google Sustainability See all Technology AI Developers Families Next billion users Safety and security See all Inside Google Data centers and infrastructure Doodles Googlers Life at Google See all Around the globe Google in Africa Google in Asia Google in Europe Google in Latin America See all Perspectives Sundar Pichai, CEO Ruth Porat, SVP and CFO Kent Walker, SVP See all Press corner RSS feed Subscribe Sundar Pichai CEO of Google and Alphabet Sundar is the CEO of Google and Alphabet and serves on Alphabet’s Board of Directors.
+                Confidence: 0.8462812900543213 ; Subject: Alphabet Sundar ; Object: SVP ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: Sundar Pichai | Google Blog The Keyword Latest stories Product updates Product updates Android, Chrome & Play Android Chrome Chromebooks Google Play Wear OS by Google Devices & Services Chromecast Google Nest Pixel Pixelbook Stadia Explore & Get Answers Earth Google Assistant Maps News Search Travel Connect & Communicate Duo Photos Translate In The Cloud Docs, Sheets and Slides Gmail Google Cloud Meet More on the Cloud Blog See all product updates Company news Company news Outreach & initiatives Diversity and inclusion Education Google.org Grow with Google Sustainability See all Technology AI Developers Families Next billion users Safety and security See all Inside Google Data centers and infrastructure Doodles Googlers Life at Google See all Around the globe Google in Africa Google in Asia Google in Europe Google in Latin America See all Perspectives Sundar Pichai, CEO Ruth Porat, SVP and CFO Kent Walker, SVP See all Press corner RSS feed Subscribe Sundar Pichai CEO of Google and Alphabet Sundar is the CEO of Google and Alphabet and serves on Alphabet’s Board of Directors.
+                Confidence: 0.8110288381576538 ; Subject: Alphabet Sundar ; Object: RSS ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: Sundar Pichai | Google Blog The Keyword Latest stories Product updates Product updates Android, Chrome & Play Android Chrome Chromebooks Google Play Wear OS by Google Devices & Services Chromecast Google Nest Pixel Pixelbook Stadia Explore & Get Answers Earth Google Assistant Maps News Search Travel Connect & Communicate Duo Photos Translate In The Cloud Docs, Sheets and Slides Gmail Google Cloud Meet More on the Cloud Blog See all product updates Company news Company news Outreach & initiatives Diversity and inclusion Education Google.org Grow with Google Sustainability See all Technology AI Developers Families Next billion users Safety and security See all Inside Google Data centers and infrastructure Doodles Googlers Life at Google See all Around the globe Google in Africa Google in Asia Google in Europe Google in Latin America See all Perspectives Sundar Pichai, CEO Ruth Porat, SVP and CFO Kent Walker, SVP See all Press corner RSS feed Subscribe Sundar Pichai CEO of Google and Alphabet Sundar is the CEO of Google and Alphabet and serves on Alphabet’s Board of Directors.
+                Confidence: 0.9271430969238281 ; Subject: Sundar Pichai ; Object: Google ;
+                New tuple found with higher confidence. Replacing the older one.
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: Sundar Pichai | Google Blog The Keyword Latest stories Product updates Product updates Android, Chrome & Play Android Chrome Chromebooks Google Play Wear OS by Google Devices & Services Chromecast Google Nest Pixel Pixelbook Stadia Explore & Get Answers Earth Google Assistant Maps News Search Travel Connect & Communicate Duo Photos Translate In The Cloud Docs, Sheets and Slides Gmail Google Cloud Meet More on the Cloud Blog See all product updates Company news Company news Outreach & initiatives Diversity and inclusion Education Google.org Grow with Google Sustainability See all Technology AI Developers Families Next billion users Safety and security See all Inside Google Data centers and infrastructure Doodles Googlers Life at Google See all Around the globe Google in Africa Google in Asia Google in Europe Google in Latin America See all Perspectives Sundar Pichai, CEO Ruth Porat, SVP and CFO Kent Walker, SVP See all Press corner RSS feed Subscribe Sundar Pichai CEO of Google and Alphabet Sundar is the CEO of Google and Alphabet and serves on Alphabet’s Board of Directors.
+                Confidence: 0.7840635776519775 ; Subject: Sundar Pichai ; Object: Alphabet’s Board of Directors ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: Sundar Pichai | Google Blog The Keyword Latest stories Product updates Product updates Android, Chrome & Play Android Chrome Chromebooks Google Play Wear OS by Google Devices & Services Chromecast Google Nest Pixel Pixelbook Stadia Explore & Get Answers Earth Google Assistant Maps News Search Travel Connect & Communicate Duo Photos Translate In The Cloud Docs, Sheets and Slides Gmail Google Cloud Meet More on the Cloud Blog See all product updates Company news Company news Outreach & initiatives Diversity and inclusion Education Google.org Grow with Google Sustainability See all Technology AI Developers Families Next billion users Safety and security See all Inside Google Data centers and infrastructure Doodles Googlers Life at Google See all Around the globe Google in Africa Google in Asia Google in Europe Google in Latin America See all Perspectives Sundar Pichai, CEO Ruth Porat, SVP and CFO Kent Walker, SVP See all Press corner RSS feed Subscribe Sundar Pichai CEO of Google and Alphabet Sundar is the CEO of Google and Alphabet and serves on Alphabet’s Board of Directors.
+                Confidence: 0.9869772791862488 ; Subject: Alphabet Sundar ; Object: Google ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: Sundar Pichai | Google Blog The Keyword Latest stories Product updates Product updates Android, Chrome & Play Android Chrome Chromebooks Google Play Wear OS by Google Devices & Services Chromecast Google Nest Pixel Pixelbook Stadia Explore & Get Answers Earth Google Assistant Maps News Search Travel Connect & Communicate Duo Photos Translate In The Cloud Docs, Sheets and Slides Gmail Google Cloud Meet More on the Cloud Blog See all product updates Company news Company news Outreach & initiatives Diversity and inclusion Education Google.org Grow with Google Sustainability See all Technology AI Developers Families Next billion users Safety and security See all Inside Google Data centers and infrastructure Doodles Googlers Life at Google See all Around the globe Google in Africa Google in Asia Google in Europe Google in Latin America See all Perspectives Sundar Pichai, CEO Ruth Porat, SVP and CFO Kent Walker, SVP See all Press corner RSS feed Subscribe Sundar Pichai CEO of Google and Alphabet Sundar is the CEO of Google and Alphabet and serves on Alphabet’s Board of Directors.
+                Confidence: 0.9942478537559509 ; Subject: Alphabet Sundar ; Object: Google ;
+                New tuple found with higher confidence. Replacing the older one.
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: Sundar Pichai | Google Blog The Keyword Latest stories Product updates Product updates Android, Chrome & Play Android Chrome Chromebooks Google Play Wear OS by Google Devices & Services Chromecast Google Nest Pixel Pixelbook Stadia Explore & Get Answers Earth Google Assistant Maps News Search Travel Connect & Communicate Duo Photos Translate In The Cloud Docs, Sheets and Slides Gmail Google Cloud Meet More on the Cloud Blog See all product updates Company news Company news Outreach & initiatives Diversity and inclusion Education Google.org Grow with Google Sustainability See all Technology AI Developers Families Next billion users Safety and security See all Inside Google Data centers and infrastructure Doodles Googlers Life at Google See all Around the globe Google in Africa Google in Asia Google in Europe Google in Latin America See all Perspectives Sundar Pichai, CEO Ruth Porat, SVP and CFO Kent Walker, SVP See all Press corner RSS feed Subscribe Sundar Pichai CEO of Google and Alphabet Sundar is the CEO of Google and Alphabet and serves on Alphabet’s Board of Directors.
+                Confidence: 0.994083821773529 ; Subject: Alphabet Sundar ; Object: Alphabet’s Board of Directors ;
+                Adding to set of extracted relations
+                ==========================
+
+        Processed 5 / 12  sentences...
+        Processed 10 / 12  sentences...
+URL (6/10): https://www.cnbc.com/2019/02/01/how-google-ceos-brilliant-answer-in-a-job-interview-helped-him-get-hired.html
+        Fetching text from url...
+        Webpage Length (num characters): 6035
+        Annotating the webpage using spacy...
+        Extracted 55 sentences...
+        Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+        Processed 5 / 55  sentences...
+        Processed 10 / 55  sentences...
+        Processed 15 / 55  sentences...
+        Processed 20 / 55  sentences...
+
+                === Extracted Relation ===
+                Sentence: Laszlo Bock Former senior VP of people operations at Google Science agrees, too.
+                Confidence: 0.9927603006362915 ; Subject: Laszlo Bock ; Object: Google Science ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: Laszlo Bock , Google's former senior VP of people operations, calls it one of the top qualities he looks for in a candidate.
+                Confidence: 0.9918338060379028 ; Subject: Laszlo Bock ; Object: Google ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: Laszlo Bock , Google's former senior VP of people operations, calls it one of the top qualities he looks for in a candidate.
+                Confidence: 0.9970812797546387 ; Subject: Laszlo Bock ; Object: VP ;
+                Adding to set of extracted relations
+                ==========================
+
+        Processed 25 / 55  sentences...
+        Processed 30 / 55  sentences...
+        Processed 35 / 55  sentences...
+        Processed 40 / 55  sentences...
+        Processed 45 / 55  sentences...
+
+                === Extracted Relation ===
+                Sentence: Tom Popomaronis is the Senior Director of Product Innovation at the Hawkins Group .
+                Confidence: 0.9959684014320374 ; Subject: Tom Popomaronis ; Object: the Hawkins Group ;
+                Adding to set of extracted relations
+                ==========================
+
+        Processed 50 / 55  sentences...
+        Processed 55 / 55  sentences...
+URL (7/10): https://www.youtube.com/watch?v=mpfxsvBPWEs
+        Fetching text from url...
+        Webpage Length (num characters): 217
+        Annotating the webpage using spacy...
+        Extracted 1 sentences...
+        Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+URL (8/10): https://www.cnbc.com/2018/12/11/google-ceo-sundar-pichai-testifies-before-congress-on-bias-privacy.html
+        Fetching text from url...
+        Webpage Length (num characters): 13068
+        Annotating the webpage using spacy...
+        Extracted 75 sentences...
+        Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+        Processed 5 / 75  sentences...
+
+                === Extracted Relation ===
+                Sentence: This is the first time Pichai has appeared before Congress since Google declined to send him or Alphabet CEO Larry Page to a hearing on foreign election meddling earlier this year.
+                Confidence: 0.976064920425415 ; Subject: Larry Page ; Object: Google ;
+                Duplicate with lower confidence than existing record. Ignoring this.
+                ==========================
+
+        Processed 10 / 75  sentences...
+        Processed 15 / 75  sentences...
+        Processed 20 / 75  sentences...
+        Processed 25 / 75  sentences...
+        Processed 30 / 75  sentences...
+
+                === Extracted Relation ===
+                Sentence: One of the first specific questions about Google's plans in China came from Rep. Sheila Jackson Lee (D-Tx.)
+                Confidence: 0.9860421419143677 ; Subject: Sheila Jackson Lee ; Object: Google ;
+                Adding to set of extracted relations
+                ==========================
+
+        Processed 35 / 75  sentences...
+        Processed 40 / 75  sentences...
+        Processed 45 / 75  sentences...
+        Processed 50 / 75  sentences...
+        Processed 55 / 75  sentences...
+        Processed 60 / 75  sentences...
+        Processed 65 / 75  sentences...
+        Processed 70 / 75  sentences...
+        Processed 75 / 75  sentences...
+URL (9/10): https://www.britannica.com/biography/Sundar-Pichai
+        Fetching text from url...
+        Webpage Length (num characters): 6421
+        Annotating the webpage using spacy...
+        Extracted 47 sentences...
+        Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+        Processed 5 / 47  sentences...
+
+                === Extracted Relation ===
+                Sentence: External Websites Maps of India - Biography of Sundar Pichai WRITTEN BY Melinda C. Shepherd Melinda Shepherd received a B.A. (magna cum laude, Phi Beta Kappa) in English Literature from the University of Illinois, Urbana, and an M.A. in English Literature from the University of Michigan, Ann... Last Updated: Feb 2, 2021 See Article History Alternative Title: Sundararajan Pichai Sundar Pichai , in full Pichai Sundararajan , (born July 12, 1972, Madras [], Tamil Nadu , India), Indian-born American executive who was CEO of both Google, Inc. (2015– ), and its holding company , Alphabet Inc. (2019– ).
+                Confidence: 0.9961593151092529 ; Subject: Pichai Sundararajan ; Object: Google, Inc. ;
+                Adding to set of extracted relations
+                ==========================
+
+        Processed 10 / 47  sentences...
+        Processed 15 / 47  sentences...
+        Processed 20 / 47  sentences...
+
+                === Extracted Relation ===
+                Sentence: Therefore, when Google cofounders Larry Page and Sergey Brin announced the creation of Alphabet Inc., in August 2015, it came as no surprise to industry insiders that Pichai was named CEO of Google, which was reorganized as a subsidiary.
+                Confidence: 0.9840458631515503 ; Subject: Larry Page ; Object: Google ;
+                Duplicate with lower confidence than existing record. Ignoring this.
+                ==========================
+
+        Processed 25 / 47  sentences...
+
+                === Extracted Relation ===
+                Sentence: Subscribe Now Melinda C. Shepherd Learn More in these related Britannica articles: Google: Searching for business Sundar Pichai , senior vice president of products, became Google’s new CEO.
+                Confidence: 0.9942525625228882 ; Subject: Melinda C. Shepherd ; Object: Google ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: Subscribe Now Melinda C. Shepherd Learn More in these related Britannica articles: Google: Searching for business Sundar Pichai , senior vice president of products, became Google’s new CEO.
+                Confidence: 0.9471593499183655 ; Subject: Sundar Pichai ; Object: Britannica ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: Subscribe Now Melinda C. Shepherd Learn More in these related Britannica articles: Google: Searching for business Sundar Pichai , senior vice president of products, became Google’s new CEO.
+                Confidence: 0.9956578612327576 ; Subject: Sundar Pichai ; Object: Google ;
+                New tuple found with higher confidence. Replacing the older one.
+                ==========================
+
+        Processed 30 / 47  sentences...
+        Processed 35 / 47  sentences...
+        Processed 40 / 47  sentences...
+        Processed 45 / 47  sentences...
+URL (10/10): https://www.blog.google/technology/ai/ai-principles/
+        Fetching text from url...
+        Webpage Length (num characters): 9785
+        Annotating the webpage using spacy...
+        Extracted 79 sentences...
+        Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+
+                === Extracted Relation ===
+                Sentence: AI at Google: our principles The Keyword Latest stories Product updates Product updates Android, Chrome & Play Android Chrome Chromebooks Google Play Wear OS by Google Devices & Services Chromecast Google Nest Pixel Pixelbook Stadia Explore & Get Answers Earth Google Assistant Maps News Search Travel Connect & Communicate Duo Photos Translate In The Cloud Docs, Sheets and Slides Gmail Google Cloud Meet More on the Cloud Blog See all product updates Company news Company news Outreach & initiatives Diversity and inclusion Education Google.org Grow with Google Sustainability See all Technology AI Developers Families Next billion users Safety and security See all Inside Google Data centers and infrastructure Doodles Googlers Life at Google See all Around the globe Google in Africa Google in Asia Google in Europe Google in Latin America See all Perspectives Sundar Pichai, CEO Ruth Porat, SVP and CFO Kent Walker, SVP See all Press corner RSS feed Subscribe AI AI at Google: our principles Copy link Sundar Pichai CEO Published Jun 07, 2018 Copy link At its heart, AI is computer programming that learns and adapts.
+                Confidence: 0.8444584608078003 ; Subject: Ruth Porat ; Object: SVP ;
+                New tuple found with higher confidence. Replacing the older one.
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: AI at Google: our principles The Keyword Latest stories Product updates Product updates Android, Chrome & Play Android Chrome Chromebooks Google Play Wear OS by Google Devices & Services Chromecast Google Nest Pixel Pixelbook Stadia Explore & Get Answers Earth Google Assistant Maps News Search Travel Connect & Communicate Duo Photos Translate In The Cloud Docs, Sheets and Slides Gmail Google Cloud Meet More on the Cloud Blog See all product updates Company news Company news Outreach & initiatives Diversity and inclusion Education Google.org Grow with Google Sustainability See all Technology AI Developers Families Next billion users Safety and security See all Inside Google Data centers and infrastructure Doodles Googlers Life at Google See all Around the globe Google in Africa Google in Asia Google in Europe Google in Latin America See all Perspectives Sundar Pichai, CEO Ruth Porat, SVP and CFO Kent Walker, SVP See all Press corner RSS feed Subscribe AI AI at Google: our principles Copy link Sundar Pichai CEO Published Jun 07, 2018 Copy link At its heart, AI is computer programming that learns and adapts.
+                Confidence: 0.8876524567604065 ; Subject: Ruth Porat ; Object: SVP ;
+                New tuple found with higher confidence. Replacing the older one.
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: AI at Google: our principles The Keyword Latest stories Product updates Product updates Android, Chrome & Play Android Chrome Chromebooks Google Play Wear OS by Google Devices & Services Chromecast Google Nest Pixel Pixelbook Stadia Explore & Get Answers Earth Google Assistant Maps News Search Travel Connect & Communicate Duo Photos Translate In The Cloud Docs, Sheets and Slides Gmail Google Cloud Meet More on the Cloud Blog See all product updates Company news Company news Outreach & initiatives Diversity and inclusion Education Google.org Grow with Google Sustainability See all Technology AI Developers Families Next billion users Safety and security See all Inside Google Data centers and infrastructure Doodles Googlers Life at Google See all Around the globe Google in Africa Google in Asia Google in Europe Google in Latin America See all Perspectives Sundar Pichai, CEO Ruth Porat, SVP and CFO Kent Walker, SVP See all Press corner RSS feed Subscribe AI AI at Google: our principles Copy link Sundar Pichai CEO Published Jun 07, 2018 Copy link At its heart, AI is computer programming that learns and adapts.
+                Confidence: 0.5460096001625061 ; Subject: Ruth Porat ; Object: Subscribe AI AI ;
+Confidence is lower than threshold confidence. Ignoring this.
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: AI at Google: our principles The Keyword Latest stories Product updates Product updates Android, Chrome & Play Android Chrome Chromebooks Google Play Wear OS by Google Devices & Services Chromecast Google Nest Pixel Pixelbook Stadia Explore & Get Answers Earth Google Assistant Maps News Search Travel Connect & Communicate Duo Photos Translate In The Cloud Docs, Sheets and Slides Gmail Google Cloud Meet More on the Cloud Blog See all product updates Company news Company news Outreach & initiatives Diversity and inclusion Education Google.org Grow with Google Sustainability See all Technology AI Developers Families Next billion users Safety and security See all Inside Google Data centers and infrastructure Doodles Googlers Life at Google See all Around the globe Google in Africa Google in Asia Google in Europe Google in Latin America See all Perspectives Sundar Pichai, CEO Ruth Porat, SVP and CFO Kent Walker, SVP See all Press corner RSS feed Subscribe AI AI at Google: our principles Copy link Sundar Pichai CEO Published Jun 07, 2018 Copy link At its heart, AI is computer programming that learns and adapts.
+                Confidence: 0.9680591225624084 ; Subject: Sundar Pichai ; Object: SVP ;
+                New tuple found with higher confidence. Replacing the older one.
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: AI at Google: our principles The Keyword Latest stories Product updates Product updates Android, Chrome & Play Android Chrome Chromebooks Google Play Wear OS by Google Devices & Services Chromecast Google Nest Pixel Pixelbook Stadia Explore & Get Answers Earth Google Assistant Maps News Search Travel Connect & Communicate Duo Photos Translate In The Cloud Docs, Sheets and Slides Gmail Google Cloud Meet More on the Cloud Blog See all product updates Company news Company news Outreach & initiatives Diversity and inclusion Education Google.org Grow with Google Sustainability See all Technology AI Developers Families Next billion users Safety and security See all Inside Google Data centers and infrastructure Doodles Googlers Life at Google See all Around the globe Google in Africa Google in Asia Google in Europe Google in Latin America See all Perspectives Sundar Pichai, CEO Ruth Porat, SVP and CFO Kent Walker, SVP See all Press corner RSS feed Subscribe AI AI at Google: our principles Copy link Sundar Pichai CEO Published Jun 07, 2018 Copy link At its heart, AI is computer programming that learns and adapts.
+                Confidence: 0.8385279178619385 ; Subject: Sundar Pichai ; Object: RSS ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: AI at Google: our principles The Keyword Latest stories Product updates Product updates Android, Chrome & Play Android Chrome Chromebooks Google Play Wear OS by Google Devices & Services Chromecast Google Nest Pixel Pixelbook Stadia Explore & Get Answers Earth Google Assistant Maps News Search Travel Connect & Communicate Duo Photos Translate In The Cloud Docs, Sheets and Slides Gmail Google Cloud Meet More on the Cloud Blog See all product updates Company news Company news Outreach & initiatives Diversity and inclusion Education Google.org Grow with Google Sustainability See all Technology AI Developers Families Next billion users Safety and security See all Inside Google Data centers and infrastructure Doodles Googlers Life at Google See all Around the globe Google in Africa Google in Asia Google in Europe Google in Latin America See all Perspectives Sundar Pichai, CEO Ruth Porat, SVP and CFO Kent Walker, SVP See all Press corner RSS feed Subscribe AI AI at Google: our principles Copy link Sundar Pichai CEO Published Jun 07, 2018 Copy link At its heart, AI is computer programming that learns and adapts.
+                Confidence: 0.5196448564529419 ; Subject: Sundar Pichai ; Object: Subscribe AI AI ;
+Confidence is lower than threshold confidence. Ignoring this.
+                ==========================
+
+        Processed 5 / 79  sentences...
+        Processed 10 / 79  sentences...
+        Processed 15 / 79  sentences...
+        Processed 20 / 79  sentences...
+        Processed 25 / 79  sentences...
+        Processed 30 / 79  sentences...
+        Processed 35 / 79  sentences...
+        Processed 40 / 79  sentences...
+        Processed 45 / 79  sentences...
+        Processed 50 / 79  sentences...
+        Processed 55 / 79  sentences...
+        Processed 60 / 79  sentences...
+        Processed 65 / 79  sentences...
+        Processed 70 / 79  sentences...
+        Processed 75 / 79  sentences...
+================== ALL RELATIONS for per:employee_of (35) ==================
+Confidence: ('per:employee_of', 0.99728286)              | Subject: Larry Page           | Object: Google
+Confidence: ('per:employee_of', 0.9970813)               | Subject: Laszlo Bock                  | Object: VP
+Confidence: ('per:employee_of', 0.9970765)               | Subject: Pichai               | Object: Google
+Confidence: ('per:employee_of', 0.9966135)               | Subject: Pichai               | Object: Alphabet Inc
+Confidence: ('per:employee_of', 0.9961593)               | Subject: Pichai Sundararajan                  | Object: Google, Inc.
+Confidence: ('per:employee_of', 0.9959684)               | Subject: Tom Popomaronis              | Object: the Hawkins Group
+Confidence: ('per:employee_of', 0.99565786)              | Subject: Sundar Pichai                | Object: Google
+Confidence: ('per:employee_of', 0.99521923)              | Subject: Sundar Pichai                | Object: Android
+Confidence: ('per:employee_of', 0.99425256)              | Subject: Melinda C. Shepherd                  | Object: Google
+Confidence: ('per:employee_of', 0.99424785)              | Subject: Alphabet Sundar              | Object: Google
+Confidence: ('per:employee_of', 0.9940838)               | Subject: Alphabet Sundar              | Object: Alphabet’s Board of Directors
+Confidence: ('per:employee_of', 0.9927603)               | Subject: Laszlo Bock                  | Object: Google Science
+Confidence: ('per:employee_of', 0.9918338)               | Subject: Laszlo Bock                  | Object: Google
+Confidence: ('per:employee_of', 0.98604214)              | Subject: Sheila Jackson Lee           | Object: Google
+Confidence: ('per:employee_of', 0.9778389)               | Subject: Samuel Gibbs                 | Object: the Wayback Machine
+Confidence: ('per:employee_of', 0.9745934)               | Subject: Sundar Pichai                | Object: 2020 Copy
+Confidence: ('per:employee_of', 0.97068644)              | Subject: Melonie Parker               | Object: Equity Project Management Office
+Confidence: ('per:employee_of', 0.9680591)               | Subject: Sundar Pichai                | Object: SVP
+Confidence: ('per:employee_of', 0.9671834)               | Subject: Melonie Parker               | Object: Black Googler Network
+Confidence: ('per:employee_of', 0.9654776)               | Subject: Spouse(s             | Object: Alphabet and
+Confidence: ('per:employee_of', 0.94715935)              | Subject: Sundar Pichai                | Object: Britannica
+Confidence: ('per:employee_of', 0.94423187)              | Subject: Regunatha Pichai             | Object: GEC
+Confidence: ('per:employee_of', 0.92708474)              | Subject: David Drummond               | Object: CFO
+Confidence: ('per:employee_of', 0.92499965)              | Subject: Anjali Pichai Children               | Object: Alphabet and
+Confidence: ('per:employee_of', 0.8969603)               | Subject: Satya Nadella                | Object: Microsoft
+Confidence: ('per:employee_of', 0.8960267)               | Subject: Sergey Brin                  | Object: CFO
+Confidence: ('per:employee_of', 0.89033496)              | Subject: Melonie Parker               | Object: Black Leadership Advisory Group
+Confidence: ('per:employee_of', 0.8890275)               | Subject: Pichai               | Object: Microsoft
+Confidence: ('per:employee_of', 0.88765246)              | Subject: Ruth Porat           | Object: SVP
+Confidence: ('per:employee_of', 0.8462813)               | Subject: Alphabet Sundar              | Object: SVP
+Confidence: ('per:employee_of', 0.8385279)               | Subject: Sundar Pichai                | Object: RSS
+Confidence: ('per:employee_of', 0.81102884)              | Subject: Alphabet Sundar              | Object: RSS
+Confidence: ('per:employee_of', 0.7847129)               | Subject: -Sundar              | Object: Diversity and Inclusion Google.org Related
+Confidence: ('per:employee_of', 0.7840636)               | Subject: Sundar Pichai                | Object: Alphabet’s Board of Directors
+Confidence: ('per:employee_of', 0.7612048)               | Subject: Larry Page           | Object: Tech Gurus
+Final number of extracted tuples: 35
