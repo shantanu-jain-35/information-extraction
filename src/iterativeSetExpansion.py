@@ -4,6 +4,7 @@ import string
 import spacy
 import requests
 import nltk
+import re
 nltk.download('stopwords')
 nltk.download('punkt')
 from nltk.tokenize import word_tokenize
@@ -30,7 +31,7 @@ class IterativeSetExpansion:
                               3:"per:cities_of_residence", 
                               4:"org:top_members/employees"}
         self.bs_filtered_sections = ['noscript', 'header', 'html', 'meta', 'head', 'input', 'script', 'style']
-        self.model = SpanBERT(pretrained_dir="./src/pretrained_spanbert")
+        self.model = SpanBERT(pretrained_dir="./pretrained_spanbert")
         self.entities_of_interest = ["ORGANIZATION", "PERSON", "LOCATION", "CITY", "STATE_OR_PROVINCE", "COUNTRY"]
         self.rel_prerequisites = {1:{"Subj":{"PERSON"}, "Obj":{"ORGANIZATION"}}, 
                                   2:{"Subj":{"PERSON"}, "Obj":{"ORGANIZATION"}},
@@ -59,25 +60,27 @@ class IterativeSetExpansion:
             # For each item, extracting relations from the url
             for document_index in range(len(document_set)):
                 url = document_set[document_index]['link']
+                print("URL ({}/10): {}".format(document_index+1, url))
                 if url in self.visited_urls:
                     print("The url has already been seen. Ignoring this.")
                     continue
                 self.visited_urls.append(url)
-                print("URL ({}/10): {}".format(document_index+1, url))
-                print("Fetching text from url...")
+                print("\tFetching text from url...")
                 extracted_text = self.fetch_text_from_url(url)
                 if extracted_text == None:
                     continue
                 tokenized_documents = self.tokenize_documents(extracted_text)
+                # Checking format of texts
+                # with open(f'./extracted_texts/{document_index}.txt', 'w+') as f:
+                #     f.write(str(extracted_text))
+                #     f.write("\n\n\n\n=====================================================================================================\n\n\n\n")
+                #     f.write(str(tokenized_documents))
+                #     f.close()
                 self.extract_relations(tokenized_documents)
 
             # Sort X as per the confidence thresholds
             self.X = {k: v for k, v in sorted(self.X.items(), key=lambda item: item[1][1], reverse=True)}
             num_iterations += 1
-
-            # Checking the termination criteria
-            if len(self.X.keys()) < self.k:
-                self.generate_queries()
             
             print("================== ALL RELATIONS for {} ({}) ==================".format(
                 self.relationships[self.r],
@@ -88,6 +91,13 @@ class IterativeSetExpansion:
                     key[0],
                     key[1]
                 ))
+
+            # Checking the termination criteria
+            if len(self.X.keys()) < self.k:
+                continue_search = self.generate_queries()
+                if not continue_search:
+                    print("ISE has stalled, halting search and returning all found tuples:")
+                    break
             
         return self.X
     
@@ -100,15 +110,20 @@ class IterativeSetExpansion:
         soup = BeautifulSoup(results, 'lxml')
 
         # text filtering
-        for script in soup(["script", "style", "noscript", "header"]):
+        # for script in soup(["script", "style", "noscript", "header"]):
+        for script in soup(["script", "noscript", "header"]):
             script.extract()
         # text = soup.find_all(text=True)
-        text = soup.get_text(separator=' ')
-        lines = (line.strip() for line in text.splitlines())
+        # Original params: " ", "  ", "\n"
+        text = soup.get_text(separator='\n')
+        # text = soup.get_text(separator=' ')
+        # lines = (line.strip() for line in text.splitlines())
+        lines = (re.sub('\[(.*?)\]','[]',line) for line in text.splitlines())
         # break multi-headlines into a line each
         chunks = (phrase.strip() for line in lines for phrase in line.split("  "))
         # drop blank lines
-        filtered_text = '\n'.join(chunk for chunk in chunks if chunk)
+        # filtered_text = '\n'.join(chunk for chunk in chunks if chunk)
+        filtered_text = ' '.join(chunk for chunk in chunks if chunk)
         # filtered_text = ""
         # for data in text:
         #     if data.parent.name not in self.bs_filtered_sections:
@@ -124,26 +139,27 @@ class IterativeSetExpansion:
         # print("-----------------------------")
         # print(filtered_text)
         # print("-----------------------------")
-        print("Webpage Length (num characters): {}".format(len(filtered_text)))
+        print("\tWebpage Length (num characters): {}".format(len(filtered_text)))
         return filtered_text
 
     def tokenize_documents(self, text):
-        print("Annotating the webpage using spacy...")
+        print("\tAnnotating the webpage using spacy...")
         nlp = spacy.load("en_core_web_lg")
-        nlp.add_pipe("sentencizer")
+        nlp.add_pipe("sentencizer", before="parser")
         document = nlp(text)
         return document
 
     def extract_relations(self, document):
         num_sentences = len(list(document.sents))
-        print("Extracted {} sentences...".format(len(list(document.sents))))
-        print("Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...")
+        print("\tExtracted {} sentences...".format(len(list(document.sents))))
+        print("\tProcessing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...")
         sentence_counter = 0
         for sentence in document.sents:
             # entity_set = get_entities(tokenized_sentences[sentence_index], self.entities_of_interest)
             sentence_counter += 1
             if sentence_counter % 5 == 0:
-                print("Processed {} / {}  sentences...".format(sentence_counter, num_sentences))
+                print("\tProcessed {} / {}  sentences...".format(sentence_counter, num_sentences))
+            # print("Sentence {} is: {}".format(sentence_counter, sentence))
             candidate_pairs = self.create_candidate_pairs(sentence)
             if len(candidate_pairs) == 0:
                 continue
@@ -167,9 +183,9 @@ class IterativeSetExpansion:
             entity = tuple((example['subj'][0], example['obj'][0]))
             # check if it matches the input relationship
             if prediction[0] == self.relationships[self.r]:
-                print("=== Extracted Relation ===")
-                print("Sentence: {}".format(sentence.text))
-                print("Confidence: {} ; Subject: {} ; Object: {} ;".format(
+                print("\n\t\t=== Extracted Relation ===")
+                print("\t\tSentence: {}".format(sentence.text.strip('\t')))
+                print("\t\tConfidence: {} ; Subject: {} ; Object: {} ;".format(
                     prediction[1],
                     example['subj'][0],
                     example['obj'][0]
@@ -180,26 +196,30 @@ class IterativeSetExpansion:
                     if entity in self.X.keys():
                         if self.X[entity][1] <= prediction[1]:
                             # old tuple found with higher confidence
-                            print("New tuple found with higher confidence. Replacing the older one.")
+                            print("\t\tNew tuple found with higher confidence. Replacing the older one.")
                             self.X[entity] = prediction
                         else:
-                            print("Duplicate with lower confidence than existing record. Ignoring this.")
+                            print("\t\tDuplicate with lower confidence than existing record. Ignoring this.")
                     else:
-                        print("Adding to set of extracted relations")
+                        print("\t\tAdding to set of extracted relations")
                         self.X[entity] = prediction
                 else:
                     print("Confidence is lower than threshold confidence. Ignoring this.")
+                print("\t\t==========================\n")
         
         return
 
     def generate_queries(self):
+        continue_search = False
         for entity in self.X.keys():
             new_query = entity[0]+" "+entity[1]
             if new_query not in self.previous_queries:
                 self.previous_queries.append(new_query)
                 self.q = new_query
+                # If we find a usable query, continue search
+                continue_search = True
                 break
-        return
+        return continue_search
             
 def main():
     API_KEY = sys.argv[1]
