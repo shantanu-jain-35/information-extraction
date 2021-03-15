@@ -1,3 +1,8 @@
+"""
+Module for extracting structured top-k tuples from an unstructured database on the web using
+Iterative Set Expansion
+"""
+
 import sys
 import math
 import string
@@ -18,7 +23,27 @@ from googleapiclient.discovery import build
 
 
 class IterativeSetExpansion:
+    """
+    Contains the entire codebase for performing top-k tuple extraction using iterative set expansion
+    """
     def __init__(self, r, k, q, t, client_key, engine_key):
+        """
+        Constructor
+        @params:
+            :r: int, [1-4] indicating the relation whose tuples are to be extracted
+            :k: int, top-k tuples to be extracted
+            :t: float, a threshold confidence for each extracted relation
+            :q: string, query to be given in each iteration
+            :client_key: string, the JSON API Key
+            :engine_key: string, the Google API ID
+            :X: dict, ((subj, obj) --> (relation, confidence)), the set of tuples extracted
+            :relationships: dict, the predefined relations that we are interested in
+            :model: SpanBERT, the pre-trained span bert model
+            :entities_of_interest: list, of all the entities that we are looking to extract
+            :rel_prerequisites: dict(), the entity pairs that we are looking for in a sentence
+            :previous_queries: list, the set of all the queries given
+            :visited_urls: list, of all the urls visited
+        """
         self.r = r
         self.k = k
         self.t = t
@@ -30,7 +55,7 @@ class IterativeSetExpansion:
                               2:"per:employee_of", 
                               3:"per:cities_of_residence", 
                               4:"org:top_members/employees"}
-        self.bs_filtered_sections = ["script", "noscript", "header"]
+        # self.bs_filtered_sections = ['noscript', 'header', 'html', 'meta', 'head', 'input', 'script', 'style']
         self.model = SpanBERT(pretrained_dir="./src/pretrained_spanbert")
         self.entities_of_interest = ["ORGANIZATION", "PERSON", "LOCATION", "CITY", "STATE_OR_PROVINCE", "COUNTRY"]
         self.rel_prerequisites = {1:{"Subj":{"PERSON"}, "Obj":{"ORGANIZATION"}}, 
@@ -39,9 +64,15 @@ class IterativeSetExpansion:
                                   4:{"Subj":{"ORGANIZATION"}, "Obj":{"PERSON"}}}
         self.previous_queries = [q]
         self.visited_urls = []
-        
     
     def extract_structured_tuples(self):
+        """
+        The main function which performs the steps to extract top-k tuples from the databse of web.
+        @params:
+            :None
+        @returns:
+            X: dict(), a set of extracted tuples.
+        """
         num_iterations = 0
         while len(self.X.keys()) < self.k:
             print("Parameters:")
@@ -103,7 +134,15 @@ class IterativeSetExpansion:
         return self.X
     
     def fetch_text_from_url(self, url):
+        """
+        Fetches text from webpages, and filters them to pass to spacy
+        @params:
+            :url: the webpage url from which the text will be extracted
+        @returns:
+            filtered_text: the webpage text after it has been filtered.
+        """
         try:
+            # adding a timeout of 5 seconds
             results = requests.get(url, timeout=5).text
         except Exception as err:
             print("Timeout occurred while fetching the contents of the url. Continuing...")
@@ -111,39 +150,29 @@ class IterativeSetExpansion:
         soup = BeautifulSoup(results, 'lxml')
 
         # text filtering
-        # for script in soup(["script", "style", "noscript", "header"]):
         for script in soup(["script", "noscript", "header"]):
             script.extract()
-        # text = soup.find_all(text=True)
-        # Original params: " ", "  ", "\n"
         text = soup.get_text(separator='\n')
-        # text = soup.get_text(separator=' ')
-        # lines = (line.strip() for line in text.splitlines())
         lines = (re.sub('\[(.*?)\]','[]',line) for line in text.splitlines())
+        # code inspired from: https://stackoverflow.com/a/24968429
         # break multi-headlines into a line each
         chunks = (phrase.strip() for line in lines for phrase in line.split("  "))
         # drop blank lines
-        # filtered_text = '\n'.join(chunk for chunk in chunks if chunk)
         filtered_text = ' '.join(chunk for chunk in chunks if chunk)
-        # filtered_text = ""
-        # for data in text:
-        #     if data.parent.name not in self.bs_filtered_sections:
-        #         filtered_text += "{}".format(data)
-        # stopwords = set(nltk.corpus.stopwords.words('english')) #Fetch nltk stopwords
-        # filtered_text = filtered_text.strip('\n').encode("ascii", "ignore").decode("ascii")
-        # filtered_text = filtered_text.replace(r'\[\d+\]', '')
-        # tokenized_text = word_tokenize(filtered_text)
-        # tokenized_text = [word for word in tokenized_text if ((len(word) > 1) and word not in stopwords)]
-        # filtered_text = ' '.join(tokenized_text)
+        # keeping only the first 20000 characters
         if len(filtered_text) > 20000:
             filtered_text = filtered_text[:20000]
-        # print("-----------------------------")
-        # print(filtered_text)
-        # print("-----------------------------")
         print("\tWebpage Length (num characters): {}".format(len(filtered_text)))
         return filtered_text
 
     def tokenize_documents(self, text):
+        """
+        Tokenizes the documents into sentences using spacy
+        @params:
+            :text: the webpage content obtained from beautiful soup 
+        @returns:
+            document: the tokenized document after passing through spacy
+        """
         print("\tAnnotating the webpage using spacy...")
         nlp = spacy.load("en_core_web_lg")
         nlp.add_pipe("sentencizer", before="parser")
@@ -151,16 +180,21 @@ class IterativeSetExpansion:
         return document
 
     def extract_relations(self, document):
+        """
+        Extracts relations from each sentence (if any) by using pre-trained span bert model
+        @params:
+            :document: the tokenized document from spacy
+        @returns:
+            :None
+        """
         num_sentences = len(list(document.sents))
         print("\tExtracted {} sentences...".format(len(list(document.sents))))
         print("\tProcessing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...")
         sentence_counter = 0
         for sentence in document.sents:
-            # entity_set = get_entities(tokenized_sentences[sentence_index], self.entities_of_interest)
             sentence_counter += 1
             if sentence_counter % 5 == 0:
                 print("\tProcessed {} / {}  sentences...".format(sentence_counter, num_sentences))
-            # print("Sentence {} is: {}".format(sentence_counter, sentence))
             candidate_pairs = self.create_candidate_pairs(sentence)
             if len(candidate_pairs) == 0:
                 continue
@@ -168,6 +202,13 @@ class IterativeSetExpansion:
             self.check_threshold_and_generate_relations(sentence, candidate_pairs, relation_predictions)
     
     def create_candidate_pairs(self, sentence):
+        """
+        Generates and filters potential candidate pairs
+        @params:
+            :document: the tokenized sentence from spacy
+        @returns:
+            :Candidate potential pairs
+        """
         candidate_pairs = []
         sentence_entity_pairs = create_entity_pairs(sentence, self.entities_of_interest)
         for entity_pair in sentence_entity_pairs:

@@ -68,8 +68,9 @@ Our product code contains a main driver called iterativeSetExpansion.py. It util
 # Step-3 methodology
 
 + In order to make sure we do not re-process previously seen URLs, we keep a set of all previous processed URLS. All new URLs obtained from the search API is matched against this set before processing
-+ To extract only plain text, we only look at the following 3 sections where usuable text may occur: ["script", "noscript", "header"]
-+ We perform preprocessing where special characters that occur between brackets (i.e: []) are removed. This allowed us to capture additional information within the 20,000 character limit. This was especially useful for extracting relations from wikipedia-based articles that contained many references.
++ We removed all the sections with tags: script, headers and noscript. Since, we are mostly interested in the body of the webpage (which contains majority of the content), we observed removing this sections reduced the number of sentences to parse, and improved the relations extracted.
++ We also removed leading and trailing whitespaces, along with any citations which might interfere with the model. This allowed us to capture additional information within the 20,000 character limit. This was especially useful for extracting relations from wikipedia-based articles that contained many references.
++ Other preprocessing include, splitting multiple headlines into each line, and removing any extra new lines that might be present due to the structure of html.
 + Before calling spanbert predict on generated candidate pairs, we filtered out candidates that did not match the subject-object structure that the specified relation calls for. (I.e: If relation 4 was chosen, only candidate pairs where subj = ORGANIZATION and objc = PERSON are passed into spanbert).
 + To prevent duplicates, we check each generated relation from spanbert against the existing set of extracted relations. If the relation extracted by spanbert has higher confidence than the existing relation, we update that confidence, otherwise we ignore.
 
@@ -79,4 +80,5 @@ For the purpose of our project, we have decided to ignore the non-html files. Th
 
 
 # References
-https://stackoverflow.com/questions/1936466/beautifulsoup-grab-visible-webpage-text
++ Preprocessing Inspiration: https://stackoverflow.com/a/24968429
++ https://stackoverflow.com/questions/1936466/beautifulsoup-grab-visible-webpage-text
