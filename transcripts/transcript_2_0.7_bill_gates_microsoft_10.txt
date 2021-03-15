@@ -1,0 +1,845 @@
+Loading pre-trained spanBERT from ./pretrained_spanbert
+Parameters:
+Client Key      =        AIzaSyDNWorCRZlzJLmXMCjlFCmuYi9YMYN7XTA
+Engine Key      =        85b4a45bc6204a22a
+Relation        =        per:employee_of
+Threshold       =        0.7
+Query           =        bill gates microsoft
+# of Tuples     =        10
+========== Iteration: 1 - Query: bill gates microsoft ==========
+URL (1/10): https://en.wikipedia.org/wiki/Bill_Gates
+        Fetching text from url...
+        Webpage Length (num characters): 20000
+        Annotating the webpage using spacy...
+        Extracted 139 sentences...
+        Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+
+                === Extracted Relation ===
+                Sentence: Bill Gates - Wikipedia Bill Gates From Wikipedia, the free encyclopedia Jump to navigation Jump to search This article is about the co-founder of Microsoft.
+                Confidence: 0.9569697976112366 ; Subject: Bill Gates - Wikipedia ; Object: Microsoft ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: American business magnate and philanthropist Bill Gates Gates in 2017 Born William Henry Gates III ( 1955-10-28 ) October 28, 1955 (age 65) Seattle , Washington , U.S. Education Harvard University (dropped out) Occupation Software developer investor entrepreneur Years active 1975–present Net worth US$138.8 billion (As of March 2021 [] ) [] Title Co- chairman and co-founder of the Bill & Melinda Gates Foundation Chairman and founder of Branded Entertainment Network Chairman and co-founder of TerraPower Chairman and founder of Cascade Investment Technology advisor of Microsoft Spouse(s) Melinda French ​ ( m. 1994 ) ​ Children 3 Parent(s) Bill Gates Sr.
+                Confidence: 0.767204225063324 ; Subject: Bill Gates Gates ; Object: Harvard University ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: American business magnate and philanthropist Bill Gates Gates in 2017 Born William Henry Gates III ( 1955-10-28 ) October 28, 1955 (age 65) Seattle , Washington , U.S. Education Harvard University (dropped out) Occupation Software developer investor entrepreneur Years active 1975–present Net worth US$138.8 billion (As of March 2021 [] ) [] Title Co- chairman and co-founder of the Bill & Melinda Gates Foundation Chairman and founder of Branded Entertainment Network Chairman and co-founder of TerraPower Chairman and founder of Cascade Investment Technology advisor of Microsoft Spouse(s) Melinda French ​ ( m. 1994 ) ​ Children 3 Parent(s) Bill Gates Sr.
+                Confidence: 0.6234626173973083 ; Subject: William Henry Gates III ; Object: Harvard University ;
+Confidence is lower than threshold confidence. Ignoring this.
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: American business magnate and philanthropist Bill Gates Gates in 2017 Born William Henry Gates III ( 1955-10-28 ) October 28, 1955 (age 65) Seattle , Washington , U.S. Education Harvard University (dropped out) Occupation Software developer investor entrepreneur Years active 1975–present Net worth US$138.8 billion (As of March 2021 [] ) [] Title Co- chairman and co-founder of the Bill & Melinda Gates Foundation Chairman and founder of Branded Entertainment Network Chairman and co-founder of TerraPower Chairman and founder of Cascade Investment Technology advisor of Microsoft Spouse(s) Melinda French ​ ( m. 1994 ) ​ Children 3 Parent(s) Bill Gates Sr.
+                Confidence: 0.9470031261444092 ; Subject: Spouse(s ; Object: the Bill & Melinda Gates Foundation ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: American business magnate and philanthropist Bill Gates Gates in 2017 Born William Henry Gates III ( 1955-10-28 ) October 28, 1955 (age 65) Seattle , Washington , U.S. Education Harvard University (dropped out) Occupation Software developer investor entrepreneur Years active 1975–present Net worth US$138.8 billion (As of March 2021 [] ) [] Title Co- chairman and co-founder of the Bill & Melinda Gates Foundation Chairman and founder of Branded Entertainment Network Chairman and co-founder of TerraPower Chairman and founder of Cascade Investment Technology advisor of Microsoft Spouse(s) Melinda French ​ ( m. 1994 ) ​ Children 3 Parent(s) Bill Gates Sr.
+                Confidence: 0.9832550883293152 ; Subject: Melinda French ​ ; Object: the Bill & Melinda Gates Foundation ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: American business magnate and philanthropist Bill Gates Gates in 2017 Born William Henry Gates III ( 1955-10-28 ) October 28, 1955 (age 65) Seattle , Washington , U.S. Education Harvard University (dropped out) Occupation Software developer investor entrepreneur Years active 1975–present Net worth US$138.8 billion (As of March 2021 [] ) [] Title Co- chairman and co-founder of the Bill & Melinda Gates Foundation Chairman and founder of Branded Entertainment Network Chairman and co-founder of TerraPower Chairman and founder of Cascade Investment Technology advisor of Microsoft Spouse(s) Melinda French ​ ( m. 1994 ) ​ Children 3 Parent(s) Bill Gates Sr.
+                Confidence: 0.9894644021987915 ; Subject: Melinda French ​ ; Object: Branded Entertainment Network ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: American business magnate and philanthropist Bill Gates Gates in 2017 Born William Henry Gates III ( 1955-10-28 ) October 28, 1955 (age 65) Seattle , Washington , U.S. Education Harvard University (dropped out) Occupation Software developer investor entrepreneur Years active 1975–present Net worth US$138.8 billion (As of March 2021 [] ) [] Title Co- chairman and co-founder of the Bill & Melinda Gates Foundation Chairman and founder of Branded Entertainment Network Chairman and co-founder of TerraPower Chairman and founder of Cascade Investment Technology advisor of Microsoft Spouse(s) Melinda French ​ ( m. 1994 ) ​ Children 3 Parent(s) Bill Gates Sr.
+                Confidence: 0.9836480617523193 ; Subject: Melinda French ​ ; Object: TerraPower ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: American business magnate and philanthropist Bill Gates Gates in 2017 Born William Henry Gates III ( 1955-10-28 ) October 28, 1955 (age 65) Seattle , Washington , U.S. Education Harvard University (dropped out) Occupation Software developer investor entrepreneur Years active 1975–present Net worth US$138.8 billion (As of March 2021 [] ) [] Title Co- chairman and co-founder of the Bill & Melinda Gates Foundation Chairman and founder of Branded Entertainment Network Chairman and co-founder of TerraPower Chairman and founder of Cascade Investment Technology advisor of Microsoft Spouse(s) Melinda French ​ ( m. 1994 ) ​ Children 3 Parent(s) Bill Gates Sr.
+                Confidence: 0.9834970235824585 ; Subject: Bill Gates Sr. ; Object: TerraPower ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: American business magnate and philanthropist Bill Gates Gates in 2017 Born William Henry Gates III ( 1955-10-28 ) October 28, 1955 (age 65) Seattle , Washington , U.S. Education Harvard University (dropped out) Occupation Software developer investor entrepreneur Years active 1975–present Net worth US$138.8 billion (As of March 2021 [] ) [] Title Co- chairman and co-founder of the Bill & Melinda Gates Foundation Chairman and founder of Branded Entertainment Network Chairman and co-founder of TerraPower Chairman and founder of Cascade Investment Technology advisor of Microsoft Spouse(s) Melinda French ​ ( m. 1994 ) ​ Children 3 Parent(s) Bill Gates Sr.
+                Confidence: 0.9947808384895325 ; Subject: Melinda French ​ ; Object: Cascade Investment Technology ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: American business magnate and philanthropist Bill Gates Gates in 2017 Born William Henry Gates III ( 1955-10-28 ) October 28, 1955 (age 65) Seattle , Washington , U.S. Education Harvard University (dropped out) Occupation Software developer investor entrepreneur Years active 1975–present Net worth US$138.8 billion (As of March 2021 [] ) [] Title Co- chairman and co-founder of the Bill & Melinda Gates Foundation Chairman and founder of Branded Entertainment Network Chairman and co-founder of TerraPower Chairman and founder of Cascade Investment Technology advisor of Microsoft Spouse(s) Melinda French ​ ( m. 1994 ) ​ Children 3 Parent(s) Bill Gates Sr.
+                Confidence: 0.9167882204055786 ; Subject: Parent(s ; Object: Cascade Investment Technology ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: American business magnate and philanthropist Bill Gates Gates in 2017 Born William Henry Gates III ( 1955-10-28 ) October 28, 1955 (age 65) Seattle , Washington , U.S. Education Harvard University (dropped out) Occupation Software developer investor entrepreneur Years active 1975–present Net worth US$138.8 billion (As of March 2021 [] ) [] Title Co- chairman and co-founder of the Bill & Melinda Gates Foundation Chairman and founder of Branded Entertainment Network Chairman and co-founder of TerraPower Chairman and founder of Cascade Investment Technology advisor of Microsoft Spouse(s) Melinda French ​ ( m. 1994 ) ​ Children 3 Parent(s) Bill Gates Sr.
+                Confidence: 0.9929808974266052 ; Subject: Bill Gates Sr. ; Object: Cascade Investment Technology ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: American business magnate and philanthropist Bill Gates Gates in 2017 Born William Henry Gates III ( 1955-10-28 ) October 28, 1955 (age 65) Seattle , Washington , U.S. Education Harvard University (dropped out) Occupation Software developer investor entrepreneur Years active 1975–present Net worth US$138.8 billion (As of March 2021 [] ) [] Title Co- chairman and co-founder of the Bill & Melinda Gates Foundation Chairman and founder of Branded Entertainment Network Chairman and co-founder of TerraPower Chairman and founder of Cascade Investment Technology advisor of Microsoft Spouse(s) Melinda French ​ ( m. 1994 ) ​ Children 3 Parent(s) Bill Gates Sr.
+                Confidence: 0.9926533102989197 ; Subject: Melinda French ​ ; Object: Microsoft ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: American business magnate and philanthropist Bill Gates Gates in 2017 Born William Henry Gates III ( 1955-10-28 ) October 28, 1955 (age 65) Seattle , Washington , U.S. Education Harvard University (dropped out) Occupation Software developer investor entrepreneur Years active 1975–present Net worth US$138.8 billion (As of March 2021 [] ) [] Title Co- chairman and co-founder of the Bill & Melinda Gates Foundation Chairman and founder of Branded Entertainment Network Chairman and co-founder of TerraPower Chairman and founder of Cascade Investment Technology advisor of Microsoft Spouse(s) Melinda French ​ ( m. 1994 ) ​ Children 3 Parent(s) Bill Gates Sr.
+                Confidence: 0.9716811776161194 ; Subject: Parent(s ; Object: Microsoft ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: American business magnate and philanthropist Bill Gates Gates in 2017 Born William Henry Gates III ( 1955-10-28 ) October 28, 1955 (age 65) Seattle , Washington , U.S. Education Harvard University (dropped out) Occupation Software developer investor entrepreneur Years active 1975–present Net worth US$138.8 billion (As of March 2021 [] ) [] Title Co- chairman and co-founder of the Bill & Melinda Gates Foundation Chairman and founder of Branded Entertainment Network Chairman and co-founder of TerraPower Chairman and founder of Cascade Investment Technology advisor of Microsoft Spouse(s) Melinda French ​ ( m. 1994 ) ​ Children 3 Parent(s) Bill Gates Sr.
+                Confidence: 0.9942610859870911 ; Subject: Bill Gates Sr. ; Object: Microsoft ;
+                Adding to set of extracted relations
+                ==========================
+
+        Processed 5 / 139  sentences...
+        Processed 10 / 139  sentences...
+        Processed 15 / 139  sentences...
+
+                === Extracted Relation ===
+                Sentence: He stepped down as chairman of Microsoft in February 2014 and assumed a new post as technology adviser to support the newly appointed CEO Satya Nadella . []
+                Confidence: 0.9969851970672607 ; Subject: Satya Nadella ; Object: Microsoft ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: In March 2020, Gates left his board positions at Microsoft and Berkshire Hathaway to focus on his philanthropic endeavors including climate change , global health and development, and education. []
+                Confidence: 0.9947163462638855 ; Subject: Gates ; Object: Microsoft ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: In March 2020, Gates left his board positions at Microsoft and Berkshire Hathaway to focus on his philanthropic endeavors including climate change , global health and development, and education. []
+                Confidence: 0.6004078388214111 ; Subject: Berkshire Hathaway ; Object: Microsoft ;
+Confidence is lower than threshold confidence. Ignoring this.
+                ==========================
+
+        Processed 20 / 139  sentences...
+
+                === Extracted Relation ===
+                Sentence: In October 2017, he was surpassed by Amazon founder and CEO Jeff Bezos , who had an estimated net worth of US$90.6 billion compared to Gates's net worth of US$89.9 billion at the time. []
+                Confidence: 0.9970470070838928 ; Subject: Jeff Bezos ; Object: Amazon ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: In October 2017, he was surpassed by Amazon founder and CEO Jeff Bezos , who had an estimated net worth of US$90.6 billion compared to Gates's net worth of US$89.9 billion at the time. []
+                Confidence: 0.9966724514961243 ; Subject: Jeff Bezos ; Object: Gates ;
+                Adding to set of extracted relations
+                ==========================
+
+        Processed 25 / 139  sentences...
+        Processed 30 / 139  sentences...
+        Processed 35 / 139  sentences...
+        Processed 40 / 139  sentences...
+        Processed 45 / 139  sentences...
+        Processed 50 / 139  sentences...
+        Processed 55 / 139  sentences...
+
+                === Extracted Relation ===
+                Sentence: Gates left Harvard after two years while Ballmer stayed and graduated magna cum laude .
+                Confidence: 0.6604036092758179 ; Subject: Ballmer ; Object: Harvard ;
+Confidence is lower than threshold confidence. Ignoring this.
+                ==========================
+
+        Processed 60 / 139  sentences...
+
+                === Extracted Relation ===
+                Sentence: Years later, Ballmer succeeded Gates as Microsoft's CEO and maintained that position from 2000 until his resignation in 2014. [] []
+                Confidence: 0.9955676198005676 ; Subject: Ballmer ; Object: Microsoft ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: His solution was formalized and published in collaboration with Harvard computer scientist Christos Papadimitriou . []
+                Confidence: 0.4978415071964264 ; Subject: Christos Papadimitriou ; Object: Harvard ;
+Confidence is lower than threshold confidence. Ignoring this.
+                ==========================
+
+        Processed 65 / 139  sentences...
+        Processed 70 / 139  sentences...
+
+                === Extracted Relation ===
+                Sentence: MITS hired Allen, [] and Gates took a leave of absence from Harvard to work with him at MITS in November 1975.
+                Confidence: 0.5232471823692322 ; Subject: Gates ; Object: MITS ;
+Confidence is lower than threshold confidence. Ignoring this.
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: MITS hired Allen, [] and Gates took a leave of absence from Harvard to work with him at MITS in November 1975.
+                Confidence: 0.5297890901565552 ; Subject: Allen ; Object: Harvard ;
+Confidence is lower than threshold confidence. Ignoring this.
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: MITS hired Allen, [] and Gates took a leave of absence from Harvard to work with him at MITS in November 1975.
+                Confidence: 0.6641752123832703 ; Subject: Gates ; Object: Harvard ;
+Confidence is lower than threshold confidence. Ignoring this.
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: MITS hired Allen, [] and Gates took a leave of absence from Harvard to work with him at MITS in November 1975.
+                Confidence: 0.8046413660049438 ; Subject: Gates ; Object: MITS ;
+                Adding to set of extracted relations
+                ==========================
+
+        Processed 75 / 139  sentences...
+        Processed 80 / 139  sentences...
+        Processed 85 / 139  sentences...
+        Processed 90 / 139  sentences...
+
+                === Extracted Relation ===
+                Sentence: IBM representative Jack Sams mentioned the licensing difficulties during a subsequent meeting with Gates and asked if Microsoft could provide an operating system.
+                Confidence: 0.9038960933685303 ; Subject: Jack Sams ; Object: IBM ;
+                Adding to set of extracted relations
+                ==========================
+
+        Processed 95 / 139  sentences...
+        Processed 100 / 139  sentences...
+        Processed 105 / 139  sentences...
+        Processed 110 / 139  sentences...
+        Processed 115 / 139  sentences...
+        Processed 120 / 139  sentences...
+        Processed 125 / 139  sentences...
+        Processed 130 / 139  sentences...
+        Processed 135 / 139  sentences...
+
+                === Extracted Relation ===
+                Sentence: As of January 2014 [] , most of Gates's assets are held in Cascade Investment LLC, an entity through which he owns stakes in numerous businesses, including Four Seasons Hotels and Resorts , and Corbis Corp. [] On February 4, 2014, Gates stepped down as chairman of Microsoft to become "technology advisor" alongside CEO Satya Nadella . [] []
+                Confidence: 0.9911000728607178 ; Subject: Satya Nadella ; Object: Four Seasons Hotels and Resorts ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: As of January 2014 [] , most of Gates's assets are held in Cascade Investment LLC, an entity through which he owns stakes in numerous businesses, including Four Seasons Hotels and Resorts , and Corbis Corp. [] On February 4, 2014, Gates stepped down as chairman of Microsoft to become "technology advisor" alongside CEO Satya Nadella . [] []
+                Confidence: 0.9949297904968262 ; Subject: Satya Nadella ; Object: Corbis Corp. ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: As of January 2014 [] , most of Gates's assets are held in Cascade Investment LLC, an entity through which he owns stakes in numerous businesses, including Four Seasons Hotels and Resorts , and Corbis Corp. [] On February 4, 2014, Gates stepped down as chairman of Microsoft to become "technology advisor" alongside CEO Satya Nadella . [] []
+                Confidence: 0.993299126625061 ; Subject: Satya Nadella ; Object: Gates ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: As of January 2014 [] , most of Gates's assets are held in Cascade Investment LLC, an entity through which he owns stakes in numerous businesses, including Four Seasons Hotels and Resorts , and Corbis Corp. [] On February 4, 2014, Gates stepped down as chairman of Microsoft to become "technology advisor" alongside CEO Satya Nadella . [] []
+                Confidence: 0.9956122636795044 ; Subject: Satya Nadella ; Object: Microsoft ;
+                Duplicate with lower confidence than existing record. Ignoring this.
+                ==========================
+
+URL (2/10): https://www.gatesnotes.com/
+        Fetching text from url...
+        Webpage Length (num characters): 151
+        Annotating the webpage using spacy...
+        Extracted 2 sentences...
+        Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+URL (3/10): https://twitter.com/billgates?lang=en
+        Fetching text from url...
+        Webpage Length (num characters): 66
+        Annotating the webpage using spacy...
+        Extracted 1 sentences...
+        Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+URL (4/10): https://news.microsoft.com/2020/03/13/microsoft-announces-change-to-its-board-of-directors/
+        Fetching text from url...
+        Webpage Length (num characters): 33
+        Annotating the webpage using spacy...
+        Extracted 1 sentences...
+        Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+URL (5/10): https://www.nytimes.com/2020/03/13/technology/bill-gates-microsoft-board.html
+        Fetching text from url...
+        Webpage Length (num characters): 5019
+        Annotating the webpage using spacy...
+        Extracted 38 sentences...
+        Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+
+                === Extracted Relation ===
+                Sentence: Bill Gates Stepping Down From Microsoft’s Board - The New York Times Technology | Bill Gates Stepping Down From Microsoft’s Board Advertisement Continue reading the main story SAN FRANCISCO — Bill Gates is stepping down from the board of Microsoft, the software giant he helped found more than four decades ago.
+                Confidence: 0.6360874176025391 ; Subject: Bill Gates ; Object: Microsoft ;
+Confidence is lower than threshold confidence. Ignoring this.
+                ==========================
+
+        Processed 5 / 38  sentences...
+
+                === Extracted Relation ===
+                Sentence: Microsoft said Mr. Gates would remain a technical adviser to the company.
+                Confidence: 0.975354015827179 ; Subject: Gates ; Object: Microsoft ;
+                Duplicate with lower confidence than existing record. Ignoring this.
+                ==========================
+
+        Processed 10 / 38  sentences...
+
+                === Extracted Relation ===
+                Sentence: Mr. Gates remains one of the largest individual shareholders of Microsoft.
+                Confidence: 0.9486364722251892 ; Subject: Gates ; Object: Microsoft ;
+                Duplicate with lower confidence than existing record. Ignoring this.
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: He said he would remain active at the company and would work closely with Satya Nadella, Microsoft’s chief executive. “
+                Confidence: 0.9891209602355957 ; Subject: Satya Nadella ; Object: Microsoft ;
+                Duplicate with lower confidence than existing record. Ignoring this.
+                ==========================
+
+        Processed 15 / 38  sentences...
+        Processed 20 / 38  sentences...
+
+                === Extracted Relation ===
+                Sentence: Mr. Gates joined the Berkshire Hathaway board in 2004.
+                Confidence: 0.9972771406173706 ; Subject: Gates ; Object: Berkshire Hathaway ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: The conglomerate has nominated Kenneth Chenault, the former chief executive of American Express, to replace Mr. Gates on the board.
+                Confidence: 0.9970527291297913 ; Subject: Gates ; Object: American Express ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: Daniel Ives, managing director of equity research at Wedbush Securities, said in a research note that Mr. Gates’s stepping down from the Microsoft board was not a surprise and that it was a vote of confidence for Mr. Nadella and the direction of the company.
+                Confidence: 0.9885230660438538 ; Subject: Daniel Ives ; Object: Wedbush Securities ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: Mr. Gates founded Microsoft in 1975, dropping out of Harvard and joining Paul Allen, his friend and technology collaborator since their teenage years at a private high school in Seattle.
+                Confidence: 0.9901818037033081 ; Subject: Gates ; Object: Microsoft ;
+                Duplicate with lower confidence than existing record. Ignoring this.
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: Mr. Gates founded Microsoft in 1975, dropping out of Harvard and joining Paul Allen, his friend and technology collaborator since their teenage years at a private high school in Seattle.
+                Confidence: 0.5143625736236572 ; Subject: Gates ; Object: Harvard ;
+Confidence is lower than threshold confidence. Ignoring this.
+                ==========================
+
+        Processed 25 / 38  sentences...
+        Processed 30 / 38  sentences...
+        Processed 35 / 38  sentences...
+URL (6/10): https://www.britannica.com/biography/Bill-Gates
+        Fetching text from url...
+        Webpage Length (num characters): 10951
+        Annotating the webpage using spacy...
+        Extracted 74 sentences...
+        Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+        Processed 5 / 74  sentences...
+        Processed 10 / 74  sentences...
+
+                === Extracted Relation ===
+                Sentence: Bill Gates - Children's Encyclopedia (Ages 8-11) Bill Gates - Student Encyclopedia (Ages 11 and up) WRITTEN BY The Editors of Encyclopaedia Britannica Encyclopaedia Britannica's editors oversee subject areas in which they have extensive knowledge, whether from years of experience gained by working on that content or via study for an advanced degree.... See Article History Alternative Title: William Henry Gates III Bill Gates , in full William Henry Gates III , (born October 28, 1955, Seattle , Washington , U.S.), American computer programmer and entrepreneur who cofounded Microsoft Corporation , the world’s largest personal-computer software company.
+                Confidence: 0.5458796620368958 ; Subject: Bill Gates - Student Encyclopedia ; Object: Britannica ;
+Confidence is lower than threshold confidence. Ignoring this.
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: Bill Gates - Children's Encyclopedia (Ages 8-11) Bill Gates - Student Encyclopedia (Ages 11 and up) WRITTEN BY The Editors of Encyclopaedia Britannica Encyclopaedia Britannica's editors oversee subject areas in which they have extensive knowledge, whether from years of experience gained by working on that content or via study for an advanced degree.... See Article History Alternative Title: William Henry Gates III Bill Gates , in full William Henry Gates III , (born October 28, 1955, Seattle , Washington , U.S.), American computer programmer and entrepreneur who cofounded Microsoft Corporation , the world’s largest personal-computer software company.
+                Confidence: 0.9753586649894714 ; Subject: William Henry Gates III Bill Gates ; Object: Microsoft Corporation ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: Bill Gates - Children's Encyclopedia (Ages 8-11) Bill Gates - Student Encyclopedia (Ages 11 and up) WRITTEN BY The Editors of Encyclopaedia Britannica Encyclopaedia Britannica's editors oversee subject areas in which they have extensive knowledge, whether from years of experience gained by working on that content or via study for an advanced degree.... See Article History Alternative Title: William Henry Gates III Bill Gates , in full William Henry Gates III , (born October 28, 1955, Seattle , Washington , U.S.), American computer programmer and entrepreneur who cofounded Microsoft Corporation , the world’s largest personal-computer software company.
+                Confidence: 0.9910613298416138 ; Subject: William Henry Gates III ; Object: Microsoft Corporation ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: Bill Gates cofounded Microsoft Corporation , the world’s largest personal-computer software company.
+                Confidence: 0.9180279970169067 ; Subject: Bill Gates ; Object: Microsoft Corporation ;
+                Adding to set of extracted relations
+                ==========================
+
+        Processed 15 / 74  sentences...
+
+                === Extracted Relation ===
+                Sentence: Bill Gates founded the software company Microsoft Corporation with his friend Paul Allen .
+                Confidence: 0.9868191480636597 ; Subject: Bill Gates ; Object: Microsoft Corporation ;
+                New tuple found with higher confidence. Replacing the older one.
+                ==========================
+
+        Processed 20 / 74  sentences...
+        Processed 25 / 74  sentences...
+        Processed 30 / 74  sentences...
+        Processed 35 / 74  sentences...
+        Processed 40 / 74  sentences...
+        Processed 45 / 74  sentences...
+
+                === Extracted Relation ===
+                Sentence: After a short transition period, Gates relinquished day-to-day oversight of Microsoft in June 2008—although he remained chairman of the board—in order to devote more time to the Bill & Melinda Gates Foundation.
+                Confidence: 0.9124966859817505 ; Subject: Gates ; Object: the Bill & Melinda Gates Foundation ;
+                Adding to set of extracted relations
+                ==========================
+
+        Processed 50 / 74  sentences...
+
+                === Extracted Relation ===
+                Sentence: PRNewsFoto/Waggener Edstrom/AP Images Bill and Melinda Gates Bill and Melinda Gates, 2009.
+                Confidence: 0.7967237830162048 ; Subject: Melinda Gates Bill ; Object: PRNewsFoto/ ;
+                Adding to set of extracted relations
+                ==========================
+
+        Processed 55 / 74  sentences...
+
+                === Extracted Relation ===
+                Sentence: J Allard and Bill Gates Microsoft corporate vice president J Allard (left) and chairman Bill Gates unveiling the company's latest Zune media players.
+                Confidence: 0.996046245098114 ; Subject: J Allard ; Object: Microsoft ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: J Allard and Bill Gates Microsoft corporate vice president J Allard (left) and chairman Bill Gates unveiling the company's latest Zune media players.
+                Confidence: 0.9927120208740234 ; Subject: J Allard ; Object: Zune ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: J Allard and Bill Gates Microsoft corporate vice president J Allard (left) and chairman Bill Gates unveiling the company's latest Zune media players.
+                Confidence: 0.9333575963973999 ; Subject: Bill Gates ; Object: Zune ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: J Allard and Bill Gates Microsoft corporate vice president J Allard (left) and chairman Bill Gates unveiling the company's latest Zune media players.
+                Confidence: 0.9958392381668091 ; Subject: J Allard ; Object: Microsoft ;
+                Duplicate with lower confidence than existing record. Ignoring this.
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: J Allard and Bill Gates Microsoft corporate vice president J Allard (left) and chairman Bill Gates unveiling the company's latest Zune media players.
+                Confidence: 0.9964738488197327 ; Subject: Bill Gates ; Object: Microsoft ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: J Allard and Bill Gates Microsoft corporate vice president J Allard (left) and chairman Bill Gates unveiling the company's latest Zune media players.
+                Confidence: 0.9957290291786194 ; Subject: J Allard ; Object: Zune ;
+                New tuple found with higher confidence. Replacing the older one.
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: J Allard and Bill Gates Microsoft corporate vice president J Allard (left) and chairman Bill Gates unveiling the company's latest Zune media players.
+                Confidence: 0.9959503412246704 ; Subject: Bill Gates ; Object: Zune ;
+                New tuple found with higher confidence. Replacing the older one.
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: As teenagers they had started a company and had built the hardware and written the… Microsoft Corporation: Founding and early growth In 1975 Bill Gates and Paul G. Allen, two boyhood friends from Seattle, converted BASIC, a popular mainframe computer programming language, for use on an early personal computer (PC), the Altair.
+                Confidence: 0.9016098976135254 ; Subject: Bill Gates ; Object: Microsoft Corporation ;
+                Duplicate with lower confidence than existing record. Ignoring this.
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: Shortly afterward, Gates and Allen founded Microsoft, deriving the name from the words microcomputer and software .…
+                Confidence: 0.9828997254371643 ; Subject: Gates ; Object: Microsoft ;
+                Duplicate with lower confidence than existing record. Ignoring this.
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: Shortly afterward, Gates and Allen founded Microsoft, deriving the name from the words microcomputer and software .…
+                Confidence: 0.9596613049507141 ; Subject: Allen ; Object: Microsoft ;
+                Adding to set of extracted relations
+                ==========================
+
+        Processed 60 / 74  sentences...
+
+                === Extracted Relation ===
+                Sentence: piracy: From hackers to pirates Similarly, Bill Gates , cofounder of the Microsoft Corporation, in 1998 during a candid moment in front of an audience at the University of Washington acknowledged the problem with enforcing software copyrights in the developing world:… History at your fingertips Sign up here to see what happened On This Day , every day in your inbox!
+                Confidence: 0.9931333661079407 ; Subject: Bill Gates ; Object: the Microsoft Corporation ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: Bill Gates Quick Facts View Media Page born October 28, 1955 (age 65) Seattle , Washington awards and honors Presidential Medal of Freedom (2016) founder of Microsoft Corporation Gates Foundation notable family members spouse Melinda Gates did you know?
+                Confidence: 0.9551735520362854 ; Subject: Melinda Gates ; Object: Microsoft Corporation Gates Foundation ;
+                Adding to set of extracted relations
+                ==========================
+
+        Processed 65 / 74  sentences...
+        Processed 70 / 74  sentences...
+URL (7/10): https://www.technologyreview.com/2021/02/14/1018296/bill-gates-climate-change-beef-trees-microsoft/
+        Fetching text from url...
+        Webpage Length (num characters): 14179
+        Annotating the webpage using spacy...
+        Extracted 128 sentences...
+        Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+
+                === Extracted Relation ===
+                Sentence: The Microsoft cofounder, who is now cochair of the Bill and Melinda Gates Foundation and chair of the investment fund Breakthrough Energy Ventures , sticks to his past argument that we’ll need numerous energy breakthroughs to have any hope of cleaning up all parts of the economy and the poorest parts of the world.
+                Confidence: 0.9827731847763062 ; Subject: Bill ; Object: Microsoft ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: The Microsoft cofounder, who is now cochair of the Bill and Melinda Gates Foundation and chair of the investment fund Breakthrough Energy Ventures , sticks to his past argument that we’ll need numerous energy breakthroughs to have any hope of cleaning up all parts of the economy and the poorest parts of the world.
+                Confidence: 0.9925453662872314 ; Subject: Bill ; Object: Melinda Gates Foundation ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: The Microsoft cofounder, who is now cochair of the Bill and Melinda Gates Foundation and chair of the investment fund Breakthrough Energy Ventures , sticks to his past argument that we’ll need numerous energy breakthroughs to have any hope of cleaning up all parts of the economy and the poorest parts of the world.
+                Confidence: 0.9930869936943054 ; Subject: Bill ; Object: Breakthrough Energy Ventures ;
+                Adding to set of extracted relations
+                ==========================
+
+        Processed 5 / 128  sentences...
+        Processed 10 / 128  sentences...
+        Processed 15 / 128  sentences...
+        Processed 20 / 128  sentences...
+        Processed 25 / 128  sentences...
+        Processed 30 / 128  sentences...
+        Processed 35 / 128  sentences...
+        Processed 40 / 128  sentences...
+        Processed 45 / 128  sentences...
+        Processed 50 / 128  sentences...
+        Processed 55 / 128  sentences...
+        Processed 60 / 128  sentences...
+        Processed 65 / 128  sentences...
+        Processed 70 / 128  sentences...
+        Processed 75 / 128  sentences...
+        Processed 80 / 128  sentences...
+        Processed 85 / 128  sentences...
+        Processed 90 / 128  sentences...
+        Processed 95 / 128  sentences...
+        Processed 100 / 128  sentences...
+        Processed 105 / 128  sentences...
+        Processed 110 / 128  sentences...
+        Processed 115 / 128  sentences...
+        Processed 120 / 128  sentences...
+        Processed 125 / 128  sentences...
+URL (8/10): https://www.linkedin.com/in/williamhgates
+        Fetching text from url...
+        Webpage Length (num characters): 0
+        Annotating the webpage using spacy...
+        Extracted 0 sentences...
+        Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+URL (9/10): https://www.forbes.com/profile/bill-gates/
+        Fetching text from url...
+        Webpage Length (num characters): 7077
+        Annotating the webpage using spacy...
+        Extracted 28 sentences...
+        Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+        Processed 5 / 28  sentences...
+
+                === Extracted Relation ===
+                Sentence: In mid-March 2020, Gates stepped down as a board member of Microsoft, the software firm he founded with Paul Allen (d. 2018) in 1975.
+                Confidence: 0.9928880929946899 ; Subject: Paul Allen ; Object: Gates ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: In mid-March 2020, Gates stepped down as a board member of Microsoft, the software firm he founded with Paul Allen (d. 2018) in 1975.
+                Confidence: 0.9940060973167419 ; Subject: Paul Allen ; Object: Microsoft ;
+                Adding to set of extracted relations
+                ==========================
+
+        Processed 10 / 28  sentences...
+        Processed 15 / 28  sentences...
+
+                === Extracted Relation ===
+                Sentence: By Jonathan Ponciano Forbes Staff Feb 28, 2021 The $20,000 PC Encrusted With Diamonds And Bill Gates This PC has over $15,000 worth of diamonds inside By Antony Leather Senior Contributor Feb 26, 2021 Bill Gates Issues Serious Bitcoin Warning As Tesla Billionaire Elon Musk Stokes Crypto Price ‘Mania’ Billionaires from Microsoft founder-turned global philanthropist Bill Gates to Tesla chief executive Elon Musk are weighing in on bitcoin... By Billy Bambrough Contributor Feb 26, 2021 Android Circuit: Nokia’s Missing Flagship, Surprising OnePlus 9 Decision, Bill Gates’ Favorite Phone This week’s Android headlines; Samsung’s spectacular folding screens, Google’s latest Pixel leaks, a missing Nokia flagship, Huawei’s Mate X2 revealed, Realme’s latest smartphones, OnePlus 9E details, Bill Gates’ Android phone, and more... By Ewan Spence Senior Contributor Feb 22, 2021 How Bill Gates Proposes To Solve Climate Change Bill Gates, the world’s fourth-richest person, has a plan to save the planet from catastrophic climate change — and it's cheaper than you think.
+                Confidence: 0.8614925742149353 ; Subject: Bill Gates ; Object: Microsoft ;
+                Duplicate with lower confidence than existing record. Ignoring this.
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: By Jonathan Ponciano Forbes Staff Feb 28, 2021 The $20,000 PC Encrusted With Diamonds And Bill Gates This PC has over $15,000 worth of diamonds inside By Antony Leather Senior Contributor Feb 26, 2021 Bill Gates Issues Serious Bitcoin Warning As Tesla Billionaire Elon Musk Stokes Crypto Price ‘Mania’ Billionaires from Microsoft founder-turned global philanthropist Bill Gates to Tesla chief executive Elon Musk are weighing in on bitcoin... By Billy Bambrough Contributor Feb 26, 2021 Android Circuit: Nokia’s Missing Flagship, Surprising OnePlus 9 Decision, Bill Gates’ Favorite Phone This week’s Android headlines; Samsung’s spectacular folding screens, Google’s latest Pixel leaks, a missing Nokia flagship, Huawei’s Mate X2 revealed, Realme’s latest smartphones, OnePlus 9E details, Bill Gates’ Android phone, and more... By Ewan Spence Senior Contributor Feb 22, 2021 How Bill Gates Proposes To Solve Climate Change Bill Gates, the world’s fourth-richest person, has a plan to save the planet from catastrophic climate change — and it's cheaper than you think.
+                Confidence: 0.9760258197784424 ; Subject: Elon Musk ; Object: Microsoft ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: By Jonathan Ponciano Forbes Staff Feb 28, 2021 The $20,000 PC Encrusted With Diamonds And Bill Gates This PC has over $15,000 worth of diamonds inside By Antony Leather Senior Contributor Feb 26, 2021 Bill Gates Issues Serious Bitcoin Warning As Tesla Billionaire Elon Musk Stokes Crypto Price ‘Mania’ Billionaires from Microsoft founder-turned global philanthropist Bill Gates to Tesla chief executive Elon Musk are weighing in on bitcoin... By Billy Bambrough Contributor Feb 26, 2021 Android Circuit: Nokia’s Missing Flagship, Surprising OnePlus 9 Decision, Bill Gates’ Favorite Phone This week’s Android headlines; Samsung’s spectacular folding screens, Google’s latest Pixel leaks, a missing Nokia flagship, Huawei’s Mate X2 revealed, Realme’s latest smartphones, OnePlus 9E details, Bill Gates’ Android phone, and more... By Ewan Spence Senior Contributor Feb 22, 2021 How Bill Gates Proposes To Solve Climate Change Bill Gates, the world’s fourth-richest person, has a plan to save the planet from catastrophic climate change — and it's cheaper than you think.
+                Confidence: 0.9961070418357849 ; Subject: Billy Bambrough ; Object: Microsoft ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: By Jonathan Ponciano Forbes Staff Feb 28, 2021 The $20,000 PC Encrusted With Diamonds And Bill Gates This PC has over $15,000 worth of diamonds inside By Antony Leather Senior Contributor Feb 26, 2021 Bill Gates Issues Serious Bitcoin Warning As Tesla Billionaire Elon Musk Stokes Crypto Price ‘Mania’ Billionaires from Microsoft founder-turned global philanthropist Bill Gates to Tesla chief executive Elon Musk are weighing in on bitcoin... By Billy Bambrough Contributor Feb 26, 2021 Android Circuit: Nokia’s Missing Flagship, Surprising OnePlus 9 Decision, Bill Gates’ Favorite Phone This week’s Android headlines; Samsung’s spectacular folding screens, Google’s latest Pixel leaks, a missing Nokia flagship, Huawei’s Mate X2 revealed, Realme’s latest smartphones, OnePlus 9E details, Bill Gates’ Android phone, and more... By Ewan Spence Senior Contributor Feb 22, 2021 How Bill Gates Proposes To Solve Climate Change Bill Gates, the world’s fourth-richest person, has a plan to save the planet from catastrophic climate change — and it's cheaper than you think.
+                Confidence: 0.8747954368591309 ; Subject: Bill Gates ; Object: Android Circuit ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: By Jonathan Ponciano Forbes Staff Feb 28, 2021 The $20,000 PC Encrusted With Diamonds And Bill Gates This PC has over $15,000 worth of diamonds inside By Antony Leather Senior Contributor Feb 26, 2021 Bill Gates Issues Serious Bitcoin Warning As Tesla Billionaire Elon Musk Stokes Crypto Price ‘Mania’ Billionaires from Microsoft founder-turned global philanthropist Bill Gates to Tesla chief executive Elon Musk are weighing in on bitcoin... By Billy Bambrough Contributor Feb 26, 2021 Android Circuit: Nokia’s Missing Flagship, Surprising OnePlus 9 Decision, Bill Gates’ Favorite Phone This week’s Android headlines; Samsung’s spectacular folding screens, Google’s latest Pixel leaks, a missing Nokia flagship, Huawei’s Mate X2 revealed, Realme’s latest smartphones, OnePlus 9E details, Bill Gates’ Android phone, and more... By Ewan Spence Senior Contributor Feb 22, 2021 How Bill Gates Proposes To Solve Climate Change Bill Gates, the world’s fourth-richest person, has a plan to save the planet from catastrophic climate change — and it's cheaper than you think.
+                Confidence: 0.8975712656974792 ; Subject: Elon Musk ; Object: Tesla ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: By Jonathan Ponciano Forbes Staff Feb 28, 2021 The $20,000 PC Encrusted With Diamonds And Bill Gates This PC has over $15,000 worth of diamonds inside By Antony Leather Senior Contributor Feb 26, 2021 Bill Gates Issues Serious Bitcoin Warning As Tesla Billionaire Elon Musk Stokes Crypto Price ‘Mania’ Billionaires from Microsoft founder-turned global philanthropist Bill Gates to Tesla chief executive Elon Musk are weighing in on bitcoin... By Billy Bambrough Contributor Feb 26, 2021 Android Circuit: Nokia’s Missing Flagship, Surprising OnePlus 9 Decision, Bill Gates’ Favorite Phone This week’s Android headlines; Samsung’s spectacular folding screens, Google’s latest Pixel leaks, a missing Nokia flagship, Huawei’s Mate X2 revealed, Realme’s latest smartphones, OnePlus 9E details, Bill Gates’ Android phone, and more... By Ewan Spence Senior Contributor Feb 22, 2021 How Bill Gates Proposes To Solve Climate Change Bill Gates, the world’s fourth-richest person, has a plan to save the planet from catastrophic climate change — and it's cheaper than you think.
+                Confidence: 0.937372624874115 ; Subject: Elon Musk ; Object: Android Circuit ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: By Jonathan Ponciano Forbes Staff Feb 28, 2021 The $20,000 PC Encrusted With Diamonds And Bill Gates This PC has over $15,000 worth of diamonds inside By Antony Leather Senior Contributor Feb 26, 2021 Bill Gates Issues Serious Bitcoin Warning As Tesla Billionaire Elon Musk Stokes Crypto Price ‘Mania’ Billionaires from Microsoft founder-turned global philanthropist Bill Gates to Tesla chief executive Elon Musk are weighing in on bitcoin... By Billy Bambrough Contributor Feb 26, 2021 Android Circuit: Nokia’s Missing Flagship, Surprising OnePlus 9 Decision, Bill Gates’ Favorite Phone This week’s Android headlines; Samsung’s spectacular folding screens, Google’s latest Pixel leaks, a missing Nokia flagship, Huawei’s Mate X2 revealed, Realme’s latest smartphones, OnePlus 9E details, Bill Gates’ Android phone, and more... By Ewan Spence Senior Contributor Feb 22, 2021 How Bill Gates Proposes To Solve Climate Change Bill Gates, the world’s fourth-richest person, has a plan to save the planet from catastrophic climate change — and it's cheaper than you think.
+                Confidence: 0.662524402141571 ; Subject: Billy Bambrough ; Object: Android Circuit ;
+Confidence is lower than threshold confidence. Ignoring this.
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: By Jonathan Ponciano Forbes Staff Feb 28, 2021 The $20,000 PC Encrusted With Diamonds And Bill Gates This PC has over $15,000 worth of diamonds inside By Antony Leather Senior Contributor Feb 26, 2021 Bill Gates Issues Serious Bitcoin Warning As Tesla Billionaire Elon Musk Stokes Crypto Price ‘Mania’ Billionaires from Microsoft founder-turned global philanthropist Bill Gates to Tesla chief executive Elon Musk are weighing in on bitcoin... By Billy Bambrough Contributor Feb 26, 2021 Android Circuit: Nokia’s Missing Flagship, Surprising OnePlus 9 Decision, Bill Gates’ Favorite Phone This week’s Android headlines; Samsung’s spectacular folding screens, Google’s latest Pixel leaks, a missing Nokia flagship, Huawei’s Mate X2 revealed, Realme’s latest smartphones, OnePlus 9E details, Bill Gates’ Android phone, and more... By Ewan Spence Senior Contributor Feb 22, 2021 How Bill Gates Proposes To Solve Climate Change Bill Gates, the world’s fourth-richest person, has a plan to save the planet from catastrophic climate change — and it's cheaper than you think.
+                Confidence: 0.917549192905426 ; Subject: Ewan Spence ; Object: Realme ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: By Kerry A. Dolan Forbes Staff Feb 12, 2021 A Look Inside ‘Orchid Thief’ Author Susan Orlean’s Hudson Valley Home, On The Market For $3.5 Million The home was designed by Cutler Anderson Architects, the firm that designed Bill Gates’s house in Medina, Wash. By Lisa Chamoff Contributor Feb 5, 2021 How To Avoid Climate Disaster, The Bill Gates Way Bill Gates sets out a wide-ranging, practical — and accessible — plan for how the world can get to zero greenhouse gas emissions in time to avoid a climate catastrophe.
+                Confidence: 0.9761943221092224 ; Subject: Kerry A. Dolan ; Object: Hudson Valley Home ;
+                Adding to set of extracted relations
+                ==========================
+
+        Processed 20 / 28  sentences...
+        Processed 25 / 28  sentences...
+
+                === Extracted Relation ===
+                Sentence: By Jonathan Palmer Forbes Staff Jan 14, 2021 America’s Biggest Owner Of Farmland Is Now Bill Gates The Microsoft billionaire has been quietly building a 242,000-acre portfolio of agricultural land across 18 states.
+                Confidence: 0.9955211281776428 ; Subject: Jonathan Palmer Forbes ; Object: Microsoft ;
+                Adding to set of extracted relations
+                ==========================
+
+URL (10/10): https://www.biography.com/business-figure/bill-gates
+        Fetching text from url...
+        Webpage Length (num characters): 20000
+        Annotating the webpage using spacy...
+        Extracted 182 sentences...
+        Processing each sentence one by one to check for presence of right pair of named entity types; if so, will run the second pipeline ...
+        Processed 5 / 182  sentences...
+
+                === Extracted Relation ===
+                Sentence: In 2014, Gates stepped down as Microsoft's chairman to focus on charitable work at his foundation, the Bill and Melinda Gates Foundation.
+                Confidence: 0.9846269488334656 ; Subject: Bill ; Object: Gates ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: In 2014, Gates stepped down as Microsoft's chairman to focus on charitable work at his foundation, the Bill and Melinda Gates Foundation.
+                Confidence: 0.926010251045227 ; Subject: Bill ; Object: Microsoft ;
+                Duplicate with lower confidence than existing record. Ignoring this.
+                ==========================
+
+        Processed 10 / 182  sentences...
+        Processed 15 / 182  sentences...
+        Processed 20 / 182  sentences...
+        Processed 25 / 182  sentences...
+
+                === Extracted Relation ===
+                Sentence: Entrepreneur and businessman Bill Gates and his business partner Paul Allen founded and built the world's largest software business, Microsoft, through technological innovation, keen business strategy and aggressive business tactics.
+                Confidence: 0.992119550704956 ; Subject: Bill Gates ; Object: Microsoft ;
+                Duplicate with lower confidence than existing record. Ignoring this.
+                ==========================
+
+        Processed 30 / 182  sentences...
+
+                === Extracted Relation ===
+                Sentence: In February 2014, Gates announced that he was stepping down as Microsoft's chairman to focus on charitable work at his foundation, the Bill and Melinda Gates Foundation .
+                Confidence: 0.9834116697311401 ; Subject: Bill ; Object: Gates ;
+                Duplicate with lower confidence than existing record. Ignoring this.
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: In February 2014, Gates announced that he was stepping down as Microsoft's chairman to focus on charitable work at his foundation, the Bill and Melinda Gates Foundation .
+                Confidence: 0.5456397533416748 ; Subject: Bill ; Object: Microsoft ;
+Confidence is lower than threshold confidence. Ignoring this.
+                ==========================
+
+        Processed 35 / 182  sentences...
+        Processed 40 / 182  sentences...
+        Processed 45 / 182  sentences...
+        Processed 50 / 182  sentences...
+        Processed 55 / 182  sentences...
+        Processed 60 / 182  sentences...
+        Processed 65 / 182  sentences...
+        Processed 70 / 182  sentences...
+
+                === Extracted Relation ===
+                Sentence: After attending college for two years, Allen dropped out and moved to Boston, Massachusetts, to work for Honeywell.
+                Confidence: 0.994550347328186 ; Subject: Allen ; Object: Honeywell ;
+                Adding to set of extracted relations
+                ==========================
+
+        Processed 75 / 182  sentences...
+        Processed 80 / 182  sentences...
+
+                === Extracted Relation ===
+                Sentence: Allen was hired at MITS, and Gates soon left Harvard to work with him.
+                Confidence: 0.9798141121864319 ; Subject: Allen ; Object: Gates ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: Allen was hired at MITS, and Gates soon left Harvard to work with him.
+                Confidence: 0.9953853487968445 ; Subject: Allen ; Object: Harvard ;
+                Adding to set of extracted relations
+                ==========================
+
+        Processed 85 / 182  sentences...
+
+                === Extracted Relation ===
+                Sentence: Bill Gates and Founding Microsoft In 1975, Gates and Allen formed Micro-Soft, a blend of "micro-computer" and "software" (they dropped the hyphen within a year).
+                Confidence: 0.9687933325767517 ; Subject: Bill Gates ; Object: Micro-Soft ;
+                Adding to set of extracted relations
+                ==========================
+
+
+                === Extracted Relation ===
+                Sentence: Bill Gates and Founding Microsoft In 1975, Gates and Allen formed Micro-Soft, a blend of "micro-computer" and "software" (they dropped the hyphen within a year).
+                Confidence: 0.8800499439239502 ; Subject: Allen ; Object: Micro-Soft ;
+                Adding to set of extracted relations
+                ==========================
+
+        Processed 90 / 182  sentences...
+        Processed 95 / 182  sentences...
+        Processed 100 / 182  sentences...
+        Processed 105 / 182  sentences...
+        Processed 110 / 182  sentences...
+        Processed 115 / 182  sentences...
+
+                === Extracted Relation ===
+                Sentence: Mary was highly respected and well connected with her membership on several corporate boards, including IBM's.
+                Confidence: 0.9843528270721436 ; Subject: Mary ; Object: IBM ;
+                Adding to set of extracted relations
+                ==========================
+
+        Processed 120 / 182  sentences...
+        Processed 125 / 182  sentences...
+        Processed 130 / 182  sentences...
+        Processed 135 / 182  sentences...
+
+                === Extracted Relation ===
+                Sentence: In mid-1981, Gates and Allen incorporated Microsoft, and Gates was appointed president and chairman of the board.
+                Confidence: 0.9513508081436157 ; Subject: Allen ; Object: Gates ;
+                Duplicate with lower confidence than existing record. Ignoring this.
+                ==========================
+
+        Processed 140 / 182  sentences...
+        Processed 145 / 182  sentences...
+        Processed 150 / 182  sentences...
+        Processed 155 / 182  sentences...
+        Processed 160 / 182  sentences...
+        Processed 165 / 182  sentences...
+        Processed 170 / 182  sentences...
+        Processed 175 / 182  sentences...
+        Processed 180 / 182  sentences...
+================== ALL RELATIONS for per:employee_of (58) ==================
+Confidence: ('per:employee_of', 0.99727714)              | Subject: Gates                | Object: Berkshire Hathaway
+Confidence: ('per:employee_of', 0.9970527)               | Subject: Gates                | Object: American Express
+Confidence: ('per:employee_of', 0.997047)                | Subject: Jeff Bezos           | Object: Amazon
+Confidence: ('per:employee_of', 0.9969852)               | Subject: Satya Nadella                | Object: Microsoft
+Confidence: ('per:employee_of', 0.99667245)              | Subject: Jeff Bezos           | Object: Gates
+Confidence: ('per:employee_of', 0.99647385)              | Subject: Bill Gates           | Object: Microsoft
+Confidence: ('per:employee_of', 0.99610704)              | Subject: Billy Bambrough              | Object: Microsoft
+Confidence: ('per:employee_of', 0.99604625)              | Subject: J Allard             | Object: Microsoft
+Confidence: ('per:employee_of', 0.99595034)              | Subject: Bill Gates           | Object: Zune
+Confidence: ('per:employee_of', 0.995729)                | Subject: J Allard             | Object: Zune
+Confidence: ('per:employee_of', 0.9955676)               | Subject: Ballmer              | Object: Microsoft
+Confidence: ('per:employee_of', 0.9955211)               | Subject: Jonathan Palmer Forbes               | Object: Microsoft
+Confidence: ('per:employee_of', 0.99538535)              | Subject: Allen                | Object: Harvard
+Confidence: ('per:employee_of', 0.9949298)               | Subject: Satya Nadella                | Object: Corbis Corp.
+Confidence: ('per:employee_of', 0.99478084)              | Subject: Melinda French ​              | Object: Cascade Investment Technology
+Confidence: ('per:employee_of', 0.99471635)              | Subject: Gates                | Object: Microsoft
+Confidence: ('per:employee_of', 0.99455035)              | Subject: Allen                | Object: Honeywell
+Confidence: ('per:employee_of', 0.9942611)               | Subject: Bill Gates Sr.               | Object: Microsoft
+Confidence: ('per:employee_of', 0.9940061)               | Subject: Paul Allen           | Object: Microsoft
+Confidence: ('per:employee_of', 0.9932991)               | Subject: Satya Nadella                | Object: Gates
+Confidence: ('per:employee_of', 0.99313337)              | Subject: Bill Gates           | Object: the Microsoft Corporation
+Confidence: ('per:employee_of', 0.993087)                | Subject: Bill                 | Object: Breakthrough Energy Ventures
+Confidence: ('per:employee_of', 0.9929809)               | Subject: Bill Gates Sr.               | Object: Cascade Investment Technology
+Confidence: ('per:employee_of', 0.9928881)               | Subject: Paul Allen           | Object: Gates
+Confidence: ('per:employee_of', 0.9926533)               | Subject: Melinda French ​              | Object: Microsoft
+Confidence: ('per:employee_of', 0.99254537)              | Subject: Bill                 | Object: Melinda Gates Foundation
+Confidence: ('per:employee_of', 0.9911001)               | Subject: Satya Nadella                | Object: Four Seasons Hotels and Resorts
+Confidence: ('per:employee_of', 0.99106133)              | Subject: William Henry Gates III              | Object: Microsoft Corporation
+Confidence: ('per:employee_of', 0.9894644)               | Subject: Melinda French ​              | Object: Branded Entertainment Network
+Confidence: ('per:employee_of', 0.98852307)              | Subject: Daniel Ives                  | Object: Wedbush Securities
+Confidence: ('per:employee_of', 0.98681915)              | Subject: Bill Gates           | Object: Microsoft Corporation
+Confidence: ('per:employee_of', 0.98462695)              | Subject: Bill                 | Object: Gates
+Confidence: ('per:employee_of', 0.9843528)               | Subject: Mary                 | Object: IBM
+Confidence: ('per:employee_of', 0.98364806)              | Subject: Melinda French ​              | Object: TerraPower
+Confidence: ('per:employee_of', 0.983497)                | Subject: Bill Gates Sr.               | Object: TerraPower
+Confidence: ('per:employee_of', 0.9832551)               | Subject: Melinda French ​              | Object: the Bill & Melinda Gates Foundation
+Confidence: ('per:employee_of', 0.9827732)               | Subject: Bill                 | Object: Microsoft
+Confidence: ('per:employee_of', 0.9798141)               | Subject: Allen                | Object: Gates
+Confidence: ('per:employee_of', 0.9761943)               | Subject: Kerry A. Dolan               | Object: Hudson Valley Home
+Confidence: ('per:employee_of', 0.9760258)               | Subject: Elon Musk            | Object: Microsoft
+Confidence: ('per:employee_of', 0.97535866)              | Subject: William Henry Gates III Bill Gates           | Object: Microsoft Corporation
+Confidence: ('per:employee_of', 0.9716812)               | Subject: Parent(s             | Object: Microsoft
+Confidence: ('per:employee_of', 0.96879333)              | Subject: Bill Gates           | Object: Micro-Soft
+Confidence: ('per:employee_of', 0.9596613)               | Subject: Allen                | Object: Microsoft
+Confidence: ('per:employee_of', 0.9569698)               | Subject: Bill Gates - Wikipedia               | Object: Microsoft
+Confidence: ('per:employee_of', 0.95517355)              | Subject: Melinda Gates                | Object: Microsoft Corporation Gates Foundation
+Confidence: ('per:employee_of', 0.9470031)               | Subject: Spouse(s             | Object: the Bill & Melinda Gates Foundation
+Confidence: ('per:employee_of', 0.9373726)               | Subject: Elon Musk            | Object: Android Circuit
+Confidence: ('per:employee_of', 0.9175492)               | Subject: Ewan Spence                  | Object: Realme
+Confidence: ('per:employee_of', 0.9167882)               | Subject: Parent(s             | Object: Cascade Investment Technology
+Confidence: ('per:employee_of', 0.9124967)               | Subject: Gates                | Object: the Bill & Melinda Gates Foundation
+Confidence: ('per:employee_of', 0.9038961)               | Subject: Jack Sams            | Object: IBM
+Confidence: ('per:employee_of', 0.89757127)              | Subject: Elon Musk            | Object: Tesla
+Confidence: ('per:employee_of', 0.88004994)              | Subject: Allen                | Object: Micro-Soft
+Confidence: ('per:employee_of', 0.87479544)              | Subject: Bill Gates           | Object: Android Circuit
+Confidence: ('per:employee_of', 0.80464137)              | Subject: Gates                | Object: MITS
+Confidence: ('per:employee_of', 0.7967238)               | Subject: Melinda Gates Bill           | Object: PRNewsFoto/
+Confidence: ('per:employee_of', 0.7672042)               | Subject: Bill Gates Gates             | Object: Harvard University
+Final number of extracted tuples: 58

@@ -30,8 +30,8 @@ class IterativeSetExpansion:
                               2:"per:employee_of", 
                               3:"per:cities_of_residence", 
                               4:"org:top_members/employees"}
-        self.bs_filtered_sections = ['noscript', 'header', 'html', 'meta', 'head', 'input', 'script', 'style']
-        self.model = SpanBERT(pretrained_dir="./pretrained_spanbert")
+        self.bs_filtered_sections = ["script", "noscript", "header"]
+        self.model = SpanBERT(pretrained_dir="./src/pretrained_spanbert")
         self.entities_of_interest = ["ORGANIZATION", "PERSON", "LOCATION", "CITY", "STATE_OR_PROVINCE", "COUNTRY"]
         self.rel_prerequisites = {1:{"Subj":{"PERSON"}, "Obj":{"ORGANIZATION"}}, 
                                   2:{"Subj":{"PERSON"}, "Obj":{"ORGANIZATION"}},
@@ -39,6 +39,7 @@ class IterativeSetExpansion:
                                   4:{"Subj":{"ORGANIZATION"}, "Obj":{"PERSON"}}}
         self.previous_queries = [q]
         self.visited_urls = []
+        
     
     def extract_structured_tuples(self):
         num_iterations = 0
