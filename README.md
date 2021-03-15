@@ -16,9 +16,9 @@ Shantanu Lalitkumar Jain (slj2142)
     - relations.txt
     - /pretrained_spanbert
     	- config.json
-	- pytorch_model.bin
+		- pytorch_model.bin
     - /pytorch_pretrained_bert
-    	- __init.py__
+    	- init.py
 	- file_utils.py
 	- modeling.py
 	- optimization.py
@@ -27,9 +27,9 @@ Shantanu Lalitkumar Jain (slj2142)
     - transcript_2_0.7_bill_gates_microsoft_10.txt
     - /additional
     	- transcript1_1_0.7_mark_zuckerberg_harvard_10.txt
-	- transcript2_2_0.7_sundar_pichai_google_10.txt
-	- transcript3_3_0.7_megan_repinoe_redding_2.txt
-	- transcript4_4_0.7_bill_gates_microsoft_10.txt
+		- transcript2_2_0.7_sundar_pichai_google_10.txt
+		- transcript3_3_0.7_megan_repinoe_redding_2.txt
+		- transcript4_4_0.7_bill_gates_microsoft_10.txt
 - requirements.txt
 - README.md
 
@@ -41,7 +41,7 @@ Shantanu Lalitkumar Jain (slj2142)
 Please follow the below mentioned instructions for running our program in the VM:
 1. Go to the project folder
 ```
-cd proj1/
+cd proj2/
 ```
 2. Install the dependencies,
 ```
